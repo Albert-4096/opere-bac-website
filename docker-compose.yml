@@ -1,0 +1,8 @@
+services:
+  website:
+    image: nginx:alpine
+    volumes:
+      - ./index.html:/usr/share/nginx/html/index.html:ro
+    ports:
+      - "8765:80"
+    restart: unless-stopped
