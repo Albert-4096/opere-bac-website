@@ -1,0 +1,2062 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BAC Literatură Română</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #0c0b09;
+  --bg-card: #131110;
+  --bg-card2: #1a1714;
+  --text: #e8e2d5;
+  --text-muted: #7a7060;
+  --gold: #c9a84c;
+  --gold-dim: #6b5520;
+  --border: #252018;
+  --romantism: #9c6fc4;
+  --simbolism: #6a8ea8;
+  --modernism-exp: #d4874a;
+  --realism: #a07854;
+  --neo-realism: #5a8070;
+  --comedie: #c04545;
+  --basm: #c85a3a;
+  --modernism-psih: #3a8fa0;
+  --modernism-erm: #6858c0;
+  --traditionalism: #5a8a40;
+  --sidebar-w: 270px;
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'DM Sans', system-ui, sans-serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+  font-size: 15px;
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+/* SIDEBAR */
+#sidebar {
+  position: fixed;
+  top: 0; left: 0;
+  width: var(--sidebar-w);
+  height: 100vh;
+  background: #0a0908;
+  border-right: 1px solid var(--border);
+  overflow-y: auto;
+  z-index: 100;
+  padding: 0 0 40px;
+  scrollbar-width: thin;
+  scrollbar-color: var(--border) transparent;
+}
+
+#sidebar::-webkit-scrollbar { width: 4px; }
+#sidebar::-webkit-scrollbar-track { background: transparent; }
+#sidebar::-webkit-scrollbar-thumb { background: var(--border); }
+
+.sidebar-logo {
+  padding: 28px 24px 20px;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 8px;
+}
+
+.sidebar-logo h1 {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--gold);
+  letter-spacing: 0.04em;
+  line-height: 1.3;
+}
+
+.sidebar-logo p {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-top: 4px;
+}
+
+.sidebar-group {
+  padding: 6px 0;
+}
+
+.sidebar-group-label {
+  font-size: 0.62rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--text-muted);
+  padding: 8px 24px 4px;
+  opacity: 0.7;
+}
+
+.sidebar-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 7px 24px;
+  text-decoration: none;
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  font-weight: 400;
+  transition: color 0.2s, background 0.2s;
+  line-height: 1.3;
+}
+
+.sidebar-link:hover { color: var(--text); background: rgba(255,255,255,0.03); }
+.sidebar-link.active { color: var(--text); }
+
+.sidebar-dot {
+  width: 7px; height: 7px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  opacity: 0.8;
+}
+
+/* MAIN */
+#main {
+  margin-left: var(--sidebar-w);
+  min-height: 100vh;
+}
+
+/* HERO */
+#hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 80px 80px;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid var(--border);
+}
+
+#hero::before {
+  content: '';
+  position: absolute;
+  top: -20%; left: -10%;
+  width: 60%; height: 80%;
+  background: radial-gradient(ellipse at center, rgba(201,168,76,0.04) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.hero-tag {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--gold);
+  margin-bottom: 24px;
+  opacity: 0.8;
+}
+
+.hero-title {
+  font-family: var(--font-serif);
+  font-size: clamp(3rem, 6vw, 6rem);
+  font-weight: 300;
+  line-height: 1.05;
+  color: var(--text);
+  margin-bottom: 24px;
+}
+
+.hero-title em {
+  font-style: italic;
+  color: var(--gold);
+}
+
+.hero-desc {
+  font-size: 1rem;
+  color: var(--text-muted);
+  max-width: 520px;
+  line-height: 1.8;
+}
+
+.hero-stats {
+  display: flex;
+  gap: 48px;
+  margin-top: 56px;
+  padding-top: 40px;
+  border-top: 1px solid var(--border);
+}
+
+.hero-stat-num {
+  font-family: var(--font-serif);
+  font-size: 2.8rem;
+  font-weight: 300;
+  color: var(--gold);
+  line-height: 1;
+}
+
+.hero-stat-label {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
+.period-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 40px;
+}
+
+.legend-chip {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  letter-spacing: 0.04em;
+}
+
+.legend-dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+}
+
+/* OPERA SECTION */
+.opera {
+  padding: 80px 80px;
+  border-bottom: 1px solid var(--border);
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.opera.visible { opacity: 1; transform: translateY(0); }
+
+.opera-header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 40px;
+  align-items: start;
+  margin-bottom: 48px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid var(--border);
+}
+
+.opera-titlu {
+  font-family: var(--font-serif);
+  font-size: clamp(2.2rem, 4vw, 3.8rem);
+  font-weight: 400;
+  line-height: 1.1;
+  color: var(--text);
+  letter-spacing: -0.01em;
+}
+
+.opera-autor-block {
+  text-align: right;
+}
+
+.opera-autor-name {
+  font-family: var(--font-serif);
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: var(--text);
+  font-style: italic;
+}
+
+.opera-autor-years {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  letter-spacing: 0.08em;
+  margin-top: 2px;
+}
+
+.opera-pub {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  letter-spacing: 0.05em;
+  margin-top: 6px;
+  opacity: 0.7;
+}
+
+/* TAGS */
+.tag-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 32px;
+}
+
+.tag {
+  padding: 4px 14px;
+  border-radius: 2px;
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border: 1px solid currentColor;
+}
+
+.tag-tema {
+  color: var(--gold);
+  border-color: var(--gold-dim);
+  background: rgba(201,168,76,0.06);
+}
+
+.tag-curent {
+  background: rgba(255,255,255,0.04);
+}
+
+/* CRITIC QUOTE */
+.critic-quote {
+  position: relative;
+  padding: 24px 28px 24px 44px;
+  margin-bottom: 40px;
+  background: var(--bg-card);
+  border-left: 2px solid;
+}
+
+.critic-quote::before {
+  content: '\201C';
+  position: absolute;
+  left: 14px; top: 10px;
+  font-family: var(--font-serif);
+  font-size: 3.5rem;
+  line-height: 1;
+  opacity: 0.25;
+}
+
+.critic-quote p {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  font-style: italic;
+  font-weight: 300;
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.critic-name {
+  margin-top: 10px;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--text-muted);
+}
+
+/* SECTION LABEL */
+.section-label {
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--text-muted);
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.section-label::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+}
+
+/* TWO COLUMN LAYOUT */
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  margin-bottom: 40px;
+}
+
+.info-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  padding: 24px;
+}
+
+.info-card h3 {
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--text-muted);
+  margin-bottom: 14px;
+}
+
+.info-card p, .info-card li {
+  font-size: 0.88rem;
+  color: var(--text);
+  line-height: 1.75;
+}
+
+.info-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.info-card ul li {
+  padding-left: 16px;
+  position: relative;
+  margin-bottom: 6px;
+}
+
+.info-card ul li::before {
+  content: '–';
+  position: absolute;
+  left: 0;
+  color: var(--text-muted);
+}
+
+/* COMPOSITION DIAGRAM */
+.comp-diagram {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  padding: 28px;
+  margin-bottom: 40px;
+}
+
+.comp-diagram h3 {
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--text-muted);
+  margin-bottom: 20px;
+}
+
+.comp-flow {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.comp-node {
+  flex: 1;
+  min-width: 100px;
+  padding: 14px 16px;
+  background: var(--bg-card2);
+  border: 1px solid var(--border);
+  text-align: center;
+  font-size: 0.78rem;
+  color: var(--text);
+  line-height: 1.4;
+}
+
+.comp-node .num {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  display: block;
+  color: var(--text-muted);
+  margin-bottom: 4px;
+}
+
+.comp-arrow {
+  color: var(--text-muted);
+  font-size: 1.2rem;
+  flex-shrink: 0;
+  opacity: 0.5;
+}
+
+.comp-alt {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 16px;
+}
+
+.comp-side {
+  padding: 14px 20px;
+  background: var(--bg-card2);
+  border: 1px solid var(--border);
+  text-align: center;
+}
+
+.comp-vs {
+  font-family: var(--font-serif);
+  font-size: 1.4rem;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+/* VISUAL ASPECT CARDS */
+.aspect-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.aspect-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+  transition: border-color 0.25s;
+}
+
+.aspect-card:hover {
+  border-color: currentColor;
+}
+
+.aspect-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 2px;
+  background: currentColor;
+  opacity: 0.4;
+}
+
+.aspect-icon {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.aspect-title {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+}
+
+.aspect-body {
+  font-size: 0.85rem;
+  color: var(--text);
+  line-height: 1.65;
+}
+
+/* ANTITHESIS VISUAL */
+.antithesis {
+  display: grid;
+  grid-template-columns: 1fr 60px 1fr;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  padding: 20px;
+}
+
+.antithesis-side {
+  padding: 12px 16px;
+  background: var(--bg-card2);
+  border: 1px solid var(--border);
+}
+
+.antithesis-side h4 {
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  font-style: italic;
+  margin-bottom: 6px;
+}
+
+.antithesis-side p {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.antithesis-center {
+  text-align: center;
+  font-family: var(--font-serif);
+  font-size: 1.6rem;
+  color: var(--text-muted);
+}
+
+/* MYTH PILLS */
+.pill-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 12px 0 24px;
+}
+
+.pill {
+  padding: 5px 14px;
+  border-radius: 2px;
+  font-size: 0.78rem;
+  background: var(--bg-card2);
+  border: 1px solid var(--border);
+  color: var(--text);
+}
+
+/* FINAL QUOTE */
+.final-quote {
+  padding: 28px 32px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  margin-top: 16px;
+}
+
+.final-quote p {
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  font-style: italic;
+  font-weight: 300;
+  color: var(--text);
+  line-height: 1.6;
+}
+
+/* COLOR ACCENT BAR */
+.opera-accent {
+  height: 3px;
+  width: 60px;
+  margin-bottom: 24px;
+}
+
+/* TYPOLOGY GRID */
+.typo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.typo-item {
+  background: var(--bg-card2);
+  border: 1px solid var(--border);
+  padding: 12px 14px;
+  font-size: 0.8rem;
+}
+
+.typo-item strong {
+  display: block;
+  font-weight: 500;
+  color: var(--text);
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  font-style: italic;
+  margin-bottom: 3px;
+}
+
+.typo-item span {
+  color: var(--text-muted);
+  font-size: 0.75rem;
+}
+
+/* MOBILE */
+#menu-toggle {
+  display: none;
+  position: fixed;
+  top: 16px; left: 16px;
+  z-index: 200;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: 8px 14px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-family: var(--font-sans);
+}
+
+@media (max-width: 900px) {
+  #sidebar {
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+  }
+  #sidebar.open { transform: translateX(0); }
+  #main { margin-left: 0; }
+  #menu-toggle { display: block; }
+  .opera { padding: 60px 28px; }
+  #hero { padding: 80px 28px 60px; }
+  .opera-header { grid-template-columns: 1fr; gap: 16px; }
+  .opera-autor-block { text-align: left; }
+  .two-col { grid-template-columns: 1fr; }
+  .comp-flow { flex-direction: column; }
+  .comp-arrow { transform: rotate(90deg); }
+  .hero-stats { flex-wrap: wrap; gap: 28px; }
+}
+
+/* SCROLL PROGRESS */
+#progress {
+  position: fixed;
+  top: 0; left: var(--sidebar-w);
+  right: 0;
+  height: 2px;
+  background: var(--border);
+  z-index: 50;
+}
+
+#progress-bar {
+  height: 100%;
+  background: var(--gold);
+  width: 0;
+  transition: width 0.1s;
+}
+
+@media (max-width: 900px) {
+  #progress { left: 0; }
+}
+</style>
+</head>
+<body>
+
+<button id="menu-toggle" onclick="toggleSidebar()">☰ Opere</button>
+
+<div id="progress"><div id="progress-bar"></div></div>
+
+<nav id="sidebar">
+  <div class="sidebar-logo">
+    <h1>Literatură Română</h1>
+    <p>BAC · 13 opere</p>
+  </div>
+
+  <div class="sidebar-group">
+    <div class="sidebar-group-label">Poezie</div>
+    <a href="#luceafarul" class="sidebar-link"><span class="sidebar-dot" style="background:var(--romantism)"></span>Luceafărul · Eminescu</a>
+    <a href="#corola" class="sidebar-link"><span class="sidebar-dot" style="background:var(--modernism-exp)"></span>Eu nu strivesc corola · Blaga</a>
+    <a href="#plumb" class="sidebar-link"><span class="sidebar-dot" style="background:var(--simbolism)"></span>Plumb · Bacovia</a>
+    <a href="#riga" class="sidebar-link"><span class="sidebar-dot" style="background:var(--modernism-erm)"></span>Riga Crypto · Barbu</a>
+    <a href="#aci" class="sidebar-link"><span class="sidebar-dot" style="background:var(--traditionalism)"></span>Aci sosi pe vremuri · Pillat</a>
+  </div>
+
+  <div class="sidebar-group">
+    <div class="sidebar-group-label">Proză</div>
+    <a href="#baltagul" class="sidebar-link"><span class="sidebar-dot" style="background:var(--realism)"></span>Baltagul · Sadoveanu</a>
+    <a href="#ion" class="sidebar-link"><span class="sidebar-dot" style="background:var(--realism)"></span>Ion · Rebreanu</a>
+    <a href="#enigma" class="sidebar-link"><span class="sidebar-dot" style="background:var(--realism)"></span>Enigma Otiliei · Călinescu</a>
+    <a href="#moara" class="sidebar-link"><span class="sidebar-dot" style="background:var(--realism)"></span>Moara cu noroc · Slavici</a>
+    <a href="#morometii" class="sidebar-link"><span class="sidebar-dot" style="background:var(--neo-realism)"></span>Moromeții · Preda</a>
+    <a href="#ultima" class="sidebar-link"><span class="sidebar-dot" style="background:var(--modernism-psih)"></span>Ultima noapte · C. Petrescu</a>
+    <a href="#harap" class="sidebar-link"><span class="sidebar-dot" style="background:var(--basm)"></span>Harap-Alb · Creangă</a>
+  </div>
+
+  <div class="sidebar-group">
+    <div class="sidebar-group-label">Teatru</div>
+    <a href="#scrisoare" class="sidebar-link"><span class="sidebar-dot" style="background:var(--comedie)"></span>O scrisoare pierdută · Caragiale</a>
+  </div>
+</nav>
+
+<main id="main">
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-tag">Ghid vizual de studiu</div>
+  <h1 class="hero-title">13 Opere<br><em>literare</em><br>esențiale</h1>
+  <p class="hero-desc">Toate operele pentru Bacalaureatul de Română, prezentate vizual și structurat — cu teme, curente, compoziție, citate critice și aspectele esențiale de memorat.</p>
+
+  <div class="hero-stats">
+    <div>
+      <div class="hero-stat-num">13</div>
+      <div class="hero-stat-label">Opere studiate</div>
+    </div>
+    <div>
+      <div class="hero-stat-num">5</div>
+      <div class="hero-stat-label">Curente literare</div>
+    </div>
+    <div>
+      <div class="hero-stat-num">3</div>
+      <div class="hero-stat-label">Genuri: lirică, epică, dramatică</div>
+    </div>
+  </div>
+
+  <div class="period-legend">
+    <div class="legend-chip"><span class="legend-dot" style="background:var(--romantism)"></span>Romantism</div>
+    <div class="legend-chip"><span class="legend-dot" style="background:var(--simbolism)"></span>Simbolism</div>
+    <div class="legend-chip"><span class="legend-dot" style="background:var(--modernism-exp)"></span>Modernism expresionist</div>
+    <div class="legend-chip"><span class="legend-dot" style="background:var(--modernism-erm)"></span>Modernism ermetic</div>
+    <div class="legend-chip"><span class="legend-dot" style="background:var(--modernism-psih)"></span>Modernism psihologic</div>
+    <div class="legend-chip"><span class="legend-dot" style="background:var(--realism)"></span>Realism</div>
+    <div class="legend-chip"><span class="legend-dot" style="background:var(--neo-realism)"></span>Neorealism</div>
+    <div class="legend-chip"><span class="legend-dot" style="background:var(--traditionalism)"></span>Tradiționism</div>
+    <div class="legend-chip"><span class="legend-dot" style="background:var(--comedie)"></span>Comedie de moravuri</div>
+    <div class="legend-chip"><span class="legend-dot" style="background:var(--basm)"></span>Basm cult</div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════ -->
+<!-- 1. LUCEAFĂRUL -->
+<!-- ═══════════════════════════════════════ -->
+<section class="opera" id="luceafarul" style="color: var(--romantism)">
+  <div class="opera-accent" style="background: var(--romantism)"></div>
+
+  <div class="opera-header">
+    <div>
+      <div class="opera-titlu">Luceafărul</div>
+    </div>
+    <div class="opera-autor-block">
+      <div class="opera-autor-name">Mihai Eminescu</div>
+      <div class="opera-autor-years">1850 – 1898</div>
+      <div class="opera-pub">publicat 1883 · Almanahul Societății Carpatice</div>
+    </div>
+  </div>
+
+  <div class="tag-row">
+    <span class="tag tag-tema">Condiția omului de geniu</span>
+    <span class="tag tag-tema">Iubire absolută vs. iubire pământeană</span>
+    <span class="tag tag-curent" style="color:var(--romantism); border-color:var(--romantism); background:rgba(156,111,196,0.08)">Romantism</span>
+  </div>
+
+  <div class="critic-quote" style="border-color:var(--romantism)">
+    <p>„chintesența gândirii poetice eminesciene, testamentul literar al poetului"</p>
+    <div class="critic-name">— George Călinescu</div>
+  </div>
+
+  <div class="section-label">Compoziție</div>
+  <div class="comp-diagram" style="border-color:var(--romantism)">
+    <h3>4 tablouri · 98 catrene · Alternanță cosmică ↔ terestră</h3>
+    <div class="comp-flow">
+      <div class="comp-node" style="border-color:rgba(156,111,196,0.4)">
+        <span class="num">I</span>
+        Cosmic<br><small style="color:var(--text-muted)">Fata de împărat îl cheamă pe Luceafăr</small>
+      </div>
+      <div class="comp-arrow">→</div>
+      <div class="comp-node" style="border-color:rgba(156,111,196,0.4)">
+        <span class="num">II</span>
+        Terestru<br><small style="color:var(--text-muted)">Idila cu Cătălin; limbaj popular</small>
+      </div>
+      <div class="comp-arrow">→</div>
+      <div class="comp-node" style="border-color:rgba(156,111,196,0.4)">
+        <span class="num">III</span>
+        Cosmic<br><small style="color:var(--text-muted)">Hyperion la Demiurg; călătorie inversă</small>
+      </div>
+      <div class="comp-arrow">→</div>
+      <div class="comp-node" style="border-color:rgba(156,111,196,0.4)">
+        <span class="num">IV</span>
+        Terestru<br><small style="color:var(--text-muted)">Refuzul Luceafărului; dezlegarea</small>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-label">Moduri de construcție</div>
+  <div class="two-col">
+    <div class="info-card">
+      <h3>Procedee esențiale</h3>
+      <ul>
+        <li><strong>Antiteза</strong> — etern/efemer, cosmic/terestru</li>
+        <li><strong>Oximoron</strong> — „Nemuritor și rece"</li>
+        <li><strong>Simetrie</strong> — tablouri I–III (cosmic) ↔ II–IV (terestru)</li>
+        <li><strong>Surse</strong> — basm popular + Schopenhauer + mitologie</li>
+        <li><strong>Incipit basmică</strong> — „A fost odată ca-n povești…"</li>
+      </ul>
+    </div>
+    <div class="info-card">
+      <h3>Cei doi poli ai antitezei</h3>
+      <div class="antithesis" style="padding:12px">
+        <div class="antithesis-side">
+          <h4 style="color:var(--romantism)">Hyperion / Geniu</h4>
+          <p>Nemuritor, rece, abstract, cosmic, singur</p>
+        </div>
+        <div class="antithesis-center">≠</div>
+        <div class="antithesis-side">
+          <h4>Cătălin / Om comun</h4>
+          <p>Muritor, cald, concret, terestru, fericit</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-label">Aspecte vizuale distinctive</div>
+  <div class="aspect-grid">
+    <div class="aspect-card" style="color:var(--romantism)">
+      <span class="aspect-icon">🌟</span>
+      <div class="aspect-title">Titlul — dublu simbol</div>
+      <div class="aspect-body"><strong>Luceafăr</strong> = lucifer (cel care lucește). <strong>Hyperion</strong> = cel care merge deasupra. Planeta Venus = steaua dimineatii si a serii.</div>
+    </div>
+    <div class="aspect-card" style="color:var(--romantism)">
+      <span class="aspect-icon">🪟</span>
+      <div class="aspect-title">Fereastra — motiv dual</div>
+      <div class="aspect-body">Granița dintre lumea terestră și cea cosmică. Prin fereastră fata îl cheamă, prin fereastră el coboară.</div>
+    </div>
+    <div class="aspect-card" style="color:var(--romantism)">
+      <span class="aspect-icon">🌌</span>
+      <div class="aspect-title">Tabloul III — Călătoria cosmică</div>
+      <div class="aspect-body">Hyperion = „fulger neîntrerupt". Călătorie inversă față de Geneză — din prezent spre haosul primordial. Singura cerere: moartea.</div>
+    </div>
+    <div class="aspect-card" style="color:var(--romantism)">
+      <span class="aspect-icon">⚡</span>
+      <div class="aspect-title">Răspunsul Demiurgului</div>
+      <div class="aspect-body">Nu poate oferi moartea. Hyperion poate deveni om, dar va pierde nemurirea — dilemă imposibilă. Îi oferă în schimb puterea si gloria.</div>
+    </div>
+  </div>
+
+  <div class="section-label">Cele 7 mituri</div>
+  <div class="pill-group">
+    <span class="pill" style="border-color:rgba(156,111,196,0.4); color:var(--romantism)">Nașterea universului</span>
+    <span class="pill" style="border-color:rgba(156,111,196,0.4); color:var(--romantism)">Mitic erotic / Zburătorului</span>
+    <span class="pill" style="border-color:rgba(156,111,196,0.4); color:var(--romantism)">Oniric</span>
+    <span class="pill" style="border-color:rgba(156,111,196,0.4); color:var(--romantism)">Întoarcerea la elemente</span>
+    <span class="pill" style="border-color:rgba(156,111,196,0.4); color:var(--romantism)">Creatorului</span>
+    <span class="pill" style="border-color:rgba(156,111,196,0.4); color:var(--romantism)">Omului de geniu</span>
+    <span class="pill" style="border-color:rgba(156,111,196,0.4); color:var(--romantism)">Astral</span>
+  </div>
+
+  <div class="final-quote" style="border-color:rgba(156,111,196,0.25)">
+    <p>„Trăind în cercul vostru strâmt / Norocul vă petrece, / Ci eu în lumea mea mă simt / Nemuritor și rece."</p>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════ -->
+<!-- 2. EU NU STRIVESC COROLA DE MINUNI -->
+<!-- ═══════════════════════════════════════ -->
+<section class="opera" id="corola" style="color: var(--modernism-exp)">
+  <div class="opera-accent" style="background: var(--modernism-exp)"></div>
+
+  <div class="opera-header">
+    <div>
+      <div class="opera-titlu">Eu nu strivesc corola de minuni a lumii</div>
+    </div>
+    <div class="opera-autor-block">
+      <div class="opera-autor-name">Lucian Blaga</div>
+      <div class="opera-autor-years">1895 – 1961</div>
+      <div class="opera-pub">volum „Poemele luminii" · 1919</div>
+    </div>
+  </div>
+
+  <div class="tag-row">
+    <span class="tag tag-tema">Cunoașterea</span>
+    <span class="tag tag-tema">Rolul artei și al poetului</span>
+    <span class="tag tag-tema">Artă poetică (ars poetica)</span>
+    <span class="tag tag-curent" style="color:var(--modernism-exp); border-color:var(--modernism-exp); background:rgba(212,135,74,0.08)">Modernism interbelic · Expresionism</span>
+  </div>
+
+  <div class="critic-quote" style="border-color:var(--modernism-exp)">
+    <p>„unul dintre cei mai originali creatori de imagini ai literaturii noastre"</p>
+    <div class="critic-name">— Eugen Lovinescu</div>
+  </div>
+
+  <div class="section-label">Compoziție</div>
+  <div class="comp-diagram" style="border-color:var(--modernism-exp)">
+    <h3>3 secvențe lirice · vers liber · ingambament</h3>
+    <div class="comp-flow">
+      <div class="comp-node" style="border-color:rgba(212,135,74,0.4)">
+        <span class="num">I</span>
+        Declarația<br><small style="color:var(--text-muted)">„Eu nu strivesc…" — teza artei poetice</small>
+      </div>
+      <div class="comp-arrow">→</div>
+      <div class="comp-node" style="border-color:rgba(212,135,74,0.4)">
+        <span class="num">II</span>
+        Contrast<br><small style="color:var(--text-muted)">„alții" = cunoașterea rațională (luminii altora)</small>
+      </div>
+      <div class="comp-arrow">→</div>
+      <div class="comp-node" style="border-color:rgba(212,135,74,0.4)">
+        <span class="num">III</span>
+        Revelație<br><small style="color:var(--text-muted)">„dar eu" — antiteза prin conjuncție adversativă</small>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-label">Moduri de construcție</div>
+  <div class="two-col">
+    <div class="info-card">
+      <h3>Procedee cheie</h3>
+      <ul>
+        <li>Verb negativ „<strong>nu strivesc</strong>" = refuzul cunoașterii raționale</li>
+        <li>Metaforă revelatorie: <em>„corola de minuni"</em></li>
+        <li>Antiteză centrală: <em>lumina mea</em> vs <em>lumina altora</em></li>
+        <li>Lirism subiectiv; eul liric omniprezent</li>
+        <li>„<strong>dar eu</strong>" = cel mai scurt vers — forță maximă prin minimalism</li>
+      </ul>
+    </div>
+    <div class="info-card">
+      <h3>Corola de minuni — ce cuprinde?</h3>
+      <ul>
+        <li>Florile — frumusețea naturii</li>
+        <li>Ochii — fereastra sufletului</li>
+        <li>Buzele — iubirea, cuvântul</li>
+        <li>Mormintele — misterul morții și al vieții</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section-label">Aspecte vizuale distinctive</div>
+  <div class="aspect-grid">
+    <div class="aspect-card" style="color:var(--modernism-exp)">
+      <span class="aspect-icon">🌙</span>
+      <div class="aspect-title">2 tipuri de cunoaștere</div>
+      <div class="aspect-body"><strong>Paradisiacă</strong> (rațională) = reduce misterul, „strivește". <strong>Luciferică</strong> (poetică) = sporește misterul, revelează. Blaga alege <em>lucifericul</em>.</div>
+    </div>
+    <div class="aspect-card" style="color:var(--modernism-exp)">
+      <span class="aspect-icon">💡</span>
+      <div class="aspect-title">Lumina — simbol dublu</div>
+      <div class="aspect-body"><em>Lumina mea</em> (poetic, sporitor) vs <em>lumina altora</em> (rațional, reducător). Nu opoziție lumină-întuneric, ci <strong>calitate</strong> a luminii.</div>
+    </div>
+    <div class="aspect-card" style="color:var(--modernism-exp)">
+      <span class="aspect-icon">💞</span>
+      <div class="aspect-title">Iubirea — instrument de cunoaștere</div>
+      <div class="aspect-body">Nu sentiment, ci <strong>instrument epistemic</strong>. Prin iubire se revelează misterul — nu se rezolvă.</div>
+    </div>
+    <div class="aspect-card" style="color:var(--modernism-exp)">
+      <span class="aspect-icon">🔆</span>
+      <div class="aspect-title">Luna — mediator cosmic</div>
+      <div class="aspect-body">Luna adaugă mister, nu luminează rațional. Simbol al cunoașterii luciferice — reflectă lumina fără a arde.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════ -->
+<!-- 3. PLUMB -->
+<!-- ═══════════════════════════════════════ -->
+<section class="opera" id="plumb" style="color: var(--simbolism)">
+  <div class="opera-accent" style="background: var(--simbolism)"></div>
+
+  <div class="opera-header">
+    <div>
+      <div class="opera-titlu">Plumb</div>
+    </div>
+    <div class="opera-autor-block">
+      <div class="opera-autor-name">George Bacovia</div>
+      <div class="opera-autor-years">1881 – 1957</div>
+      <div class="opera-pub">deschide volumul „Plumb" · 1916</div>
+    </div>
+  </div>
+
+  <div class="tag-row">
+    <span class="tag tag-tema">Moartea iubirii</span>
+    <span class="tag tag-tema">Condiția artistului izolat</span>
+    <span class="tag tag-tema">Spaima de neant</span>
+    <span class="tag tag-curent" style="color:var(--simbolism); border-color:var(--simbolism); background:rgba(106,142,168,0.08)">Simbolism · cu deschideri spre modernism</span>
+  </div>
+
+  <div class="critic-quote" style="border-color:var(--simbolism)">
+    <p>„Bacovia aparține unei faze mai târzii a simbolismului, în care [...] se presimte un modernism mai acut, scindat"</p>
+    <div class="critic-name">— Rodica Zafiu</div>
+  </div>
+
+  <div class="section-label">Compoziție</div>
+  <div class="comp-diagram" style="border-color:var(--simbolism)">
+    <h3>2 catrene simetrice · rimă îmbrățișată · 10 silabe · „plumb" repetat de 6 ori</h3>
+    <div class="comp-alt">
+      <div class="comp-side">
+        <strong style="font-family:var(--font-serif);font-style:italic;font-size:1.1rem">Strofa I</strong>
+        <p style="font-size:0.82rem;color:var(--text-muted);margin-top:8px">Lumea <strong>exterioară</strong> ca imens cimitir<br>Decor funerar: sicrie, coroane, cavou</p>
+      </div>
+      <div class="comp-vs">≡</div>
+      <div class="comp-side">
+        <strong style="font-family:var(--font-serif);font-style:italic;font-size:1.1rem">Strofa II</strong>
+        <p style="font-size:0.82rem;color:var(--text-muted);margin-top:8px">Lumea <strong>interioară</strong> — la fel de moartă<br>Motivul aripilor de plumb = zbor imposibil</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-label">Moduri de construcție</div>
+  <div class="two-col">
+    <div class="info-card">
+      <h3>Procedee simboliste</h3>
+      <ul>
+        <li><strong>Laitmotiv</strong> — „stam singur" + „plumb" (×6)</li>
+        <li><strong>Metaforă-oximoron</strong> — „sicriele de plumb"</li>
+        <li><strong>Sugestie și sintezie</strong> — greutate + culoare + sunet</li>
+        <li><strong>Muzicalitate gravă</strong> — sonorități închise: u, â, o</li>
+        <li><strong>Paralelism sintactic</strong> — simetrie strofică</li>
+      </ul>
+    </div>
+    <div class="info-card">
+      <h3>Semnificația lui PLUMB</h3>
+      <ul>
+        <li>Metal gri-gălbui — culoarea morții, putreziciunii</li>
+        <li>Greutate extremă — imposibilitatea eliberării</li>
+        <li>Cuvânt-sentință — circularitate, fatalitate</li>
+        <li>Bacovia: „Plumbul e galben" — mărturisire directă</li>
+        <li>Conotație sonoră: sunet dens, înfundat</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section-label">Aspecte vizuale distinctive</div>
+  <div class="aspect-grid">
+    <div class="aspect-card" style="color:var(--simbolism)">
+      <span class="aspect-icon">🪶</span>
+      <div class="aspect-title">Aripile de plumb</div>
+      <div class="aspect-body">Oximoron vizual: aripa = zbor, eliberare. Plumb = imposibilitate. <strong>Zbor în jos</strong>, nu în sus. Doborârea în loc de înălțare.</div>
+    </div>
+    <div class="aspect-card" style="color:var(--simbolism)">
+      <span class="aspect-icon">😴</span>
+      <div class="aspect-title">„Dormea întors amorul meu de plumb"</div>
+      <div class="aspect-body">Somnul = simbol al morții. „Întors" = înstrăinare totală. Amorul nu mai e viu — e mort și rece ca plumbul.</div>
+    </div>
+    <div class="aspect-card" style="color:var(--simbolism)">
+      <span class="aspect-icon">🏚️</span>
+      <div class="aspect-title">Opoziția falsă afară–înăuntru</div>
+      <div class="aspect-body">Strofa I = exterior funerar. Strofa II = interior la fel de funerar. <strong>Nu există refugiu</strong> — moartea e pretutindeni.</div>
+    </div>
+    <div class="aspect-card" style="color:var(--simbolism)">
+      <span class="aspect-icon">⚰️</span>
+      <div class="aspect-title">„Stam singur lângă mort"</div>
+      <div class="aspect-body">Înstrăinarea de sine: singur nu lângă altul, ci lângă propria iubire moartă. Subiectul și obiectul se confundă.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════ -->
+<!-- 4. BALTAGUL -->
+<!-- ═══════════════════════════════════════ -->
+<section class="opera" id="baltagul" style="color: var(--realism)">
+  <div class="opera-accent" style="background: var(--realism)"></div>
+
+  <div class="opera-header">
+    <div>
+      <div class="opera-titlu">Baltagul</div>
+    </div>
+    <div class="opera-autor-block">
+      <div class="opera-autor-name">Mihail Sadoveanu</div>
+      <div class="opera-autor-years">1880 – 1961</div>
+      <div class="opera-pub">publicat 1930</div>
+    </div>
+  </div>
+
+  <div class="tag-row">
+    <span class="tag tag-tema">Monografia satului de munte</span>
+    <span class="tag tag-tema">Călătorie inițiatică și justițiară</span>
+    <span class="tag tag-tema">Iubire matrimonială</span>
+    <span class="tag tag-curent" style="color:var(--realism); border-color:var(--realism); background:rgba(160,120,84,0.08)">Realism tradițional mitic · Roman interbelic</span>
+  </div>
+
+  <div class="critic-quote" style="border-color:var(--realism)">
+    <p>„Baltagul e un roman realist în sensul cel mai propriu"</p>
+    <div class="critic-name">— Nicolae Manolescu</div>
+  </div>
+
+  <div class="section-label">Compoziție · Structură</div>
+  <div class="comp-diagram" style="border-color:var(--realism)">
+    <h3>16 capitole · Perspectivă obiectivă · Timp: calendar religios (atemporalitate)</h3>
+    <div class="comp-flow">
+      <div class="comp-node" style="border-color:rgba(160,120,84,0.4)">
+        <span class="num" style="font-size:1.1rem">Măgura Tarcăului</span>
+        Punctul de plecare<br><small style="color:var(--text-muted)">Nechifor dispărut</small>
+      </div>
+      <div class="comp-arrow">→</div>
+      <div class="comp-node" style="border-color:rgba(160,120,84,0.4)">
+        <span class="num" style="font-size:1.1rem">Dorna</span>
+        Urmele lui<br><small style="color:var(--text-muted)">Investigație</small>
+      </div>
+      <div class="comp-arrow">→</div>
+      <div class="comp-node" style="border-color:rgba(160,120,84,0.4)">
+        <span class="num" style="font-size:1.1rem">Bistrița</span>
+        Descoperirea<br><small style="color:var(--text-muted)">Parastas = climax</small>
+      </div>
+      <div class="comp-arrow">→</div>
+      <div class="comp-node" style="border-color:rgba(160,120,84,0.4)">
+        <span class="num" style="font-size:1.1rem">Justițiar</span>
+        Pedepsirea<br><small style="color:var(--text-muted)">Vitoria + baltag</small>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-label">Cele 3 mituri</div>
+  <div class="aspect-grid">
+    <div class="aspect-card" style="color:var(--realism)">
+      <span class="aspect-icon">🌸</span>
+      <div class="aspect-title">Mitul Isis–Osiris</div>
+      <div class="aspect-body">Vitoria = Isis care îl caută pe soțul mort (Osiris). Reconstituire, înmormântare ritualică, restabilirea ordinii cosmice.</div>
+    </div>
+    <div class="aspect-card" style="color:var(--realism)">
+      <span class="aspect-icon">🐑</span>
+      <div class="aspect-title">Mitul Mioritic</div>
+      <div class="aspect-body">Motto: „Stăpâne, stăpâne / Mai cheamă și-un câine." Acceptarea morții în cheie cosmică — dar Vitoria nu acceptă, ci acționează.</div>
+    </div>
+    <div class="aspect-card" style="color:var(--realism)">
+      <span class="aspect-icon">🌊</span>
+      <div class="aspect-title">Marea Trecere</div>
+      <div class="aspect-body">Moartea ca trecere spre alt plan. Înmormântarea = ritual sacru. Parastasul = punct culminant dramatic.</div>
+    </div>
+  </div>
+
+  <div class="section-label">Aspecte distinctive</div>
+  <div class="aspect-grid">
+    <div class="aspect-card" style="color:var(--realism)">
+      <span class="aspect-icon">⚔️</span>
+      <div class="aspect-title">Baltagul — simbol cu 2 tăișuri</div>
+      <div class="aspect-body">Arma crimei = arma dreptății. Purificat simbolic prin actul justițiar al lui Gheorghiță. Obiect ce mediază ordinea cosmică.</div>
+    </div>
+    <div class="aspect-card" style="color:var(--realism)">
+      <span class="aspect-icon">👩</span>
+      <div class="aspect-title">Vitoria — „Hamlet feminin"</div>
+      <div class="aspect-body">G. Călinescu: „Hamlet feminin". Investigatoare, justițiară, exponentul speței. Voință absolută — nu doliu pasiv.</div>
+    </div>
+    <div class="aspect-card" style="color:var(--realism)">
+      <span class="aspect-icon">🧒</span>
+      <div class="aspect-title">Gheorghiță — inițiere</div>
+      <div class="aspect-body">Coborârea în râpă = probă inițiatică. Băiat → bărbat. Bildungsroman în paralel cu intriga polițistă.</div>
+    </div>
+    <div class="aspect-card" style="color:var(--realism)">
+      <span class="aspect-icon">🗺️</span>
+      <div class="aspect-title">Toponime simbolice</div>
+      <div class="aspect-body"><strong>Doi Meri</strong>, <strong>Râul Neagra</strong>. Nume: <em>Vitoria</em>=victorie, <em>Gheorghiță</em>=Sf. Gheorghe, <em>Nechifor</em>=purtător de victorie.</div>
+    </div>
+  </div>
+
+  <div class="info-card" style="margin-bottom:0">
+    <h3>Roman POLIMORF — 5 dimensiuni</h3>
+    <div class="pill-group">
+      <span class="pill" style="border-color:rgba(160,120,84,0.4); color:var(--realism)">Dragoste</span>
+      <span class="pill" style="border-color:rgba(160,120,84,0.4); color:var(--realism)">Roman polițist</span>
+      <span class="pill" style="border-color:rgba(160,120,84,0.4); color:var(--realism)">Mitic</span>
+      <span class="pill" style="border-color:rgba(160,120,84,0.4); color:var(--realism)">Monografic</span>
+      <span class="pill" style="border-color:rgba(160,120,84,0.4); color:var(--realism)">Bildungsroman</span>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════ -->
+<!-- 5. ION -->
+<!-- ═══════════════════════════════════════ -->
+<section class="opera" id="ion" style="color: var(--realism)">
+  <div class="opera-accent" style="background: var(--realism)"></div>
+
+  <div class="opera-header">
+    <div>
+      <div class="opera-titlu">Ion</div>
+    </div>
+    <div class="opera-autor-block">
+      <div class="opera-autor-name">Liviu Rebreanu</div>
+      <div class="opera-autor-years">1885 – 1944</div>
+      <div class="opera-pub">publicat 1920 · „momentul Rebreanu"</div>
+    </div>
+  </div>
+
+  <div class="tag-row">
+    <span class="tag tag-tema">Obsesia pământului</span>
+    <span class="tag tag-tema">Condiția intelectualului în Ardeal</span>
+    <span class="tag tag-curent" style="color:var(--realism); border-color:var(--realism); background:rgba(160,120,84,0.08)">Realism obiectiv · Roman interbelic</span>
+  </div>
+
+  <div class="critic-quote" style="border-color:var(--realism)">
+    <p>„Ion este o epopee perfectă"</p>
+    <div class="critic-name">— George Călinescu</div>
+  </div>
+
+  <div class="section-label">Compoziție · Structură sferoidă (circulară)</div>
+  <div class="comp-diagram" style="border-color:var(--realism)">
+    <h3>2 părți · Capitol I „Începutul" → Capitol final „Sfârșitul"</h3>
+    <div class="comp-alt">
+      <div class="comp-side">
+        <strong style="font-family:var(--font-serif);font-style:italic;font-size:1.2rem;color:var(--realism)">Glasul Pământului</strong>
+        <p style="font-size:0.82rem;color:var(--text-muted);margin-top:8px">Obsesia pământului → căsătoria cu Ana (bogată) → dobândirea pământului</p>
+      </div>
+      <div class="comp-vs">⊕</div>
+      <div class="comp-side">
+        <strong style="font-family:var(--font-serif);font-style:italic;font-size:1.2rem;color:var(--realism)">Glasul Iubirii</strong>
+        <p style="font-size:0.82rem;color:var(--text-muted);margin-top:8px">Dragostea pentru Florica → conflictul → moartea lui Ion și a Anei</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-label">Aspecte distinctive</div>
+  <div class="aspect-grid">
+    <div class="aspect-card" style="color:var(--realism)">
+      <span class="aspect-icon">🌱</span>
+      <div class="aspect-title">Geneza romanului — 3 scene reale</div>
+      <div class="aspect-body">1. Flăcăul fără pământ. 2. Fata bogată bătută de tată. 3. Țăranul sărutând pământul. Rebreanu le-a trăit/observat direct.</div>
+    </div>
+    <div class="aspect-card" style="color:var(--realism)">
+      <span class="aspect-icon">💃</span>
+      <div class="aspect-title">Hora de duminică — scenă-cheie</div>
+      <div class="aspect-body">Expoziție + scenă etnografică + toate conflictele <em>in nuce</em>. Microcosm al romanului întreg.</div>
+    </div>
+    <div class="aspect-card" style="color:var(--realism)">
+      <span class="aspect-icon">⛏️</span>
+      <div class="aspect-title">Moartea lui Ion — cu sapa</div>
+      <div class="aspect-body">Ucis cu sapa = unealta pământului. Pământul îl reclamă. Mesaj moral: posesiunea distructivă se pedepsește.</div>
+    </div>
+    <div class="aspect-card" style="color:var(--realism)">
+      <span class="aspect-icon">🛣️</span>
+      <div class="aspect-title">Drumul — metaforă a vieții</div>
+      <div class="aspect-body">Incipit și final: „drumul [...] se pierde în șoseaua cea mare și fără început." Structură sferoidă: viața = drum circular, fără sens absolut.</div>
+    </div>
+  </div>
+
+  <div class="section-label">Moduri de construcție</div>
+  <div class="two-col">
+    <div class="info-card">
+      <h3>Tehnici narative</h3>
+      <ul>
+        <li><strong>Perspectivă obiectivă</strong> — narator omniscient heterodiegetic</li>
+        <li><strong>Tehnica focalizării</strong> — apropiere variabilă de personaje</li>
+        <li><strong>Tehnica contrapunctului</strong> — Ana ↔ Florica (iubire forțată vs. iubire reală)</li>
+        <li><strong>Tehnica detaliului</strong> — realism balzacian</li>
+      </ul>
+    </div>
+    <div class="info-card">
+      <h3>Personaje-cheie</h3>
+      <div class="typo-grid">
+        <div class="typo-item"><strong>Ion</strong><span>personaj eponim; reprezentant al lumii</span></div>
+        <div class="typo-item"><strong>Ana</strong><span>sacrificata; suicid</span></div>
+        <div class="typo-item"><strong>Florica</strong><span>iubita; superficială</span></div>
+        <div class="typo-item"><strong>Herdelea</strong><span>intelectualul ardelean</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════ -->
+<!-- 6. ENIGMA OTILIEI -->
+<!-- ═══════════════════════════════════════ -->
+<section class="opera" id="enigma" style="color: var(--realism)">
+  <div class="opera-accent" style="background: var(--realism)"></div>
+
+  <div class="opera-header">
+    <div>
+      <div class="opera-titlu">Enigma Otiliei</div>
+    </div>
+    <div class="opera-autor-block">
+      <div class="opera-autor-name">George Călinescu</div>
+      <div class="opera-autor-years">1899 – 1965</div>
+      <div class="opera-pub">publicat 1938 · inițial „Părinții Otiliei"</div>
+    </div>
+  </div>
+
+  <div class="tag-row">
+    <span class="tag tag-tema">Viața burgheziei bucureștene sec. XX</span>
+    <span class="tag tag-tema">Moștenire și paternitate</span>
+    <span class="tag tag-tema">Maturizarea lui Felix</span>
+    <span class="tag tag-curent" style="color:var(--realism); border-color:var(--realism); background:rgba(160,120,84,0.08)">Realism balzacian · cu elemente de modernitate</span>
+  </div>
+
+  <div class="critic-quote" style="border-color:var(--realism)">
+    <p>„un balzacianism fără Balzac"</p>
+    <div class="critic-name">— Nicolae Manolescu</div>
+  </div>
+
+  <div class="section-label">Compoziție</div>
+  <div class="comp-diagram" style="border-color:var(--realism)">
+    <h3>2 planuri narative · Simetrie incipit–final (strada Antim) · Epilog</h3>
+    <div class="comp-alt">
+      <div class="comp-side">
+        <strong style="font-family:var(--font-serif);font-style:italic">Planul moștenirii</strong>
+        <p style="font-size:0.82rem;color:var(--text-muted);margin-top:6px">Istoria averii lui Costache Giurgiuveanu — lupta de moștenire</p>
+      </div>
+      <div class="comp-vs">+</div>
+      <div class="comp-side">
+        <strong style="font-family:var(--font-serif);font-style:italic">Planul Felix–Otilia</strong>
+        <p style="font-size:0.82rem;color:var(--text-muted);margin-top:6px">Destinul cuplului; maturizarea lui Felix; enigma Otiliei</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-label">Tipologiile balzaciene</div>
+  <div class="typo-grid" style="margin-bottom:32px">
+    <div class="typo-item"><strong>Costache</strong><span>avarul — zgârcenia patologică</span></div>
+    <div class="typo-item"><strong>Aglae</strong><span>„baba absolută fără cusur în rău"</span></div>
+    <div class="typo-item"><strong>Stănică Rațiu</strong><span>arivistul — parvenitul cinic</span></div>
+    <div class="typo-item"><strong>Otilia</strong><span>cocheta — „eroina mea lirică" (Călinescu)</span></div>
+    <div class="typo-item"><strong>Felix</strong><span>ambițiosul — ochii cititorului</span></div>
+    <div class="typo-item"><strong>Pascalopol</strong><span>aristocratul rafinat</span></div>
+    <div class="typo-item"><strong>Aurica</strong><span>fata bătrână — complexe</span></div>
+    <div class="typo-item"><strong>Simion</strong><span>dementul senil</span></div>
+  </div>
+
+  <div class="section-label">Aspecte distinctive</div>
+  <div class="aspect-grid">
+    <div class="aspect-card" style="color:var(--realism)">
+      <span class="aspect-icon">🪞</span>
+      <div class="aspect-title">Camera Otiliei — psihologie prin spațiu</div>
+      <div class="aspect-body">3 oglinzi mobile = mobilitate psihică. Piano = sensibilitate artistică. Cărți germane și franceze = cosmopolitism, inadaptare la mediu.</div>
+    </div>
+    <div class="aspect-card" style="color:var(--realism)">
+      <span class="aspect-icon">🔍</span>
+      <div class="aspect-title">Reflectarea poliendrică</div>
+      <div class="aspect-body">Otilia văzută diferit de fiecare personaj. Nu există o Otilie adevărată — există atâtea Otilii câți privitori. Enigma = perspectivism.</div>
+    </div>
+    <div class="aspect-card" style="color:var(--realism)">
+      <span class="aspect-icon">🎭</span>
+      <div class="aspect-title">Epilogul — dezamăgitor intenționat</div>
+      <div class="aspect-body">Otilia = „o doamnă foarte picantă, gen actriță întreținută". Felix = profesor celebru, căsătorit cu alta. Ironia sorții.</div>
+    </div>
+    <div class="aspect-card" style="color:var(--realism)">
+      <span class="aspect-icon">❓</span>
+      <div class="aspect-title">Enigma — a cui?</div>
+      <div class="aspect-body">„Nu Otilia are o enigmă, ci Felix crede că o are." Enigma = limitele cunoașterii celuilalt — roman de epistemologie sentimentală.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════ -->
+<!-- 7. MOARA CU NOROC -->
+<!-- ═══════════════════════════════════════ -->
+<section class="opera" id="moara" style="color: var(--realism)">
+  <div class="opera-accent" style="background: var(--realism)"></div>
+
+  <div class="opera-header">
+    <div>
+      <div class="opera-titlu">Moara cu noroc</div>
+    </div>
+    <div class="opera-autor-block">
+      <div class="opera-autor-name">Ioan Slavici</div>
+      <div class="opera-autor-years">1848 – 1925</div>
+      <div class="opera-pub">„Novele din popor" · 1881</div>
+    </div>
+  </div>
+
+  <div class="tag-row">
+    <span class="tag tag-tema">Dezumanizarea prin patima banilor</span>
+    <span class="tag tag-curent" style="color:var(--realism); border-color:var(--realism); background:rgba(160,120,84,0.08)">Realism clasic social și psihologic</span>
+  </div>
+
+  <div class="critic-quote" style="border-color:var(--realism)">
+    <p>„nuvela lui Ioan Slavici dovedește profesionalizarea accentuată a narațiunii românești"</p>
+    <div class="critic-name">— Gheorghe Crăciun</div>
+  </div>
+
+  <div class="section-label">Compoziție</div>
+  <div class="comp-diagram" style="border-color:var(--realism)">
+    <h3>17 capitole · Simetrie incipit–final (vocea soacrei) · Durată: Sf. Gheorghe → Paști (~1 an)</h3>
+    <div class="comp-flow">
+      <div class="comp-node" style="border-color:rgba(160,120,84,0.4)">
+        <span class="num">Incipit</span>
+        Vocea soacrei<br><small style="color:var(--text-muted)">Mesaj moral in nuce</small>
+      </div>
+      <div class="comp-arrow">→</div>
+      <div class="comp-node" style="border-color:rgba(160,120,84,0.4)">
+        <span class="num">Ascensiune</span>
+        Succesul morii<br><small style="color:var(--text-muted)">Banii corup</small>
+      </div>
+      <div class="comp-arrow">→</div>
+      <div class="comp-node" style="border-color:rgba(160,120,84,0.4)">
+        <span class="num">Decădere</span>
+        Ghiță—complice<br><small style="color:var(--text-muted)">Ana—trădată</small>
+      </div>
+      <div class="comp-arrow">→</div>
+      <div class="comp-node" style="border-color:rgba(160,120,84,0.4)">
+        <span class="num">Final</span>
+        Incendiu—Paști<br><small style="color:var(--text-muted)">Purificare prin foc</small>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-label">Aspecte distinctive</div>
+  <div class="aspect-grid">
+    <div class="aspect-card" style="color:var(--realism)">
+      <span class="aspect-icon">🏠</span>
+      <div class="aspect-title">Titlul — ironic</div>
+      <div class="aspect-body">Moara cu „noroc" = moara care MACINĂ destine. Noroc = capcană ironică. Locul prosperității = locul ruinei morale.</div>
+    </div>
+    <div class="aspect-card" style="color:var(--realism)">
+      <span class="aspect-icon">👴</span>
+      <div class="aspect-title">Soacra — vocea înțelepciunii</div>
+      <div class="aspect-body">Personaj secundar cu rol simbolic major. Înrămdează nuvela. Incipit: „Omul să fie mulțumit cu sărăcia sa..." — teza morală.</div>
+    </div>
+    <div class="aspect-card" style="color:var(--realism)">
+      <span class="aspect-icon">😈</span>
+      <div class="aspect-title">Lică Sămădău — maleficul</div>
+      <div class="aspect-body">Inteligent, manipulator, personificarea tentației. Nu forța brută — ci seducția corupătoare a banilor.</div>
+    </div>
+    <div class="aspect-card" style="color:var(--realism)">
+      <span class="aspect-icon">💬</span>
+      <div class="aspect-title">Ghiță — tragedia liberului arbitru</div>
+      <div class="aspect-body">„Așa m-a lăsat Dumnezeu! Ce să fac dacă e în mine ceva mai tare decât voința mea?!" — recunoașterea lipsei de forță morală.</div>
+    </div>
+  </div>
+
+  <div class="final-quote" style="border-color:rgba(160,120,84,0.25)">
+    <p>„Omul să fie mulțumit cu sărăcia sa, căci dacă e vorba nu bogăția ci liniștea colibei tale te face fericit."</p>
+    <div style="margin-top:8px;font-size:0.72rem;color:var(--text-muted);letter-spacing:0.08em">— Soacra · incipit și final</div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════ -->
+<!-- 8. MOROMEȚII -->
+<!-- ═══════════════════════════════════════ -->
+<section class="opera" id="morometii" style="color: var(--neo-realism)">
+  <div class="opera-accent" style="background: var(--neo-realism)"></div>
+
+  <div class="opera-header">
+    <div>
+      <div class="opera-titlu">Moromeții</div>
+    </div>
+    <div class="opera-autor-block">
+      <div class="opera-autor-name">Marin Preda</div>
+      <div class="opera-autor-years">1922 – 1980</div>
+      <div class="opera-pub">vol. I 1955 · vol. II 1967</div>
+    </div>
+  </div>
+
+  <div class="tag-row">
+    <span class="tag tag-tema">Destrămarea familiei tradiționale</span>
+    <span class="tag tag-tema">Criza comunicării</span>
+    <span class="tag tag-tema">Condiția țăranului față de Istorie</span>
+    <span class="tag tag-curent" style="color:var(--neo-realism); border-color:var(--neo-realism); background:rgba(90,128,112,0.08)">Realism postbelic · Neorealism</span>
+  </div>
+
+  <div class="critic-quote" style="border-color:var(--neo-realism)">
+    <p>„Moromeții e în același timp un roman dramă și implicit un roman problemă"</p>
+    <div class="critic-name">— Dumitru Micu</div>
+  </div>
+
+  <div class="section-label">Compoziție · Cele 2 timpuri</div>
+  <div class="comp-diagram" style="border-color:var(--neo-realism)">
+    <h3>Vol. I = 3 părți · vara dinaintea WWII</h3>
+    <div class="comp-alt">
+      <div class="comp-side">
+        <strong style="font-family:var(--font-serif);font-style:italic;color:var(--neo-realism)">Incipit</strong>
+        <p style="font-size:0.82rem;color:var(--text-muted);margin-top:6px">„...se pare că timpul avea cu oamenii o <strong>nesfârșită răbdare</strong>"</p>
+      </div>
+      <div class="comp-vs">→</div>
+      <div class="comp-side">
+        <strong style="font-family:var(--font-serif);font-style:italic;color:var(--neo-realism)">Final vol. I</strong>
+        <p style="font-size:0.82rem;color:var(--text-muted);margin-top:6px">„Timpul <strong>nu mai avea răbdare</strong>"</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-label">Aspecte distinctive</div>
+  <div class="aspect-grid">
+    <div class="aspect-card" style="color:var(--neo-realism)">
+      <span class="aspect-icon">🕰️</span>
+      <div class="aspect-title">Cele 2 tipuri de timp</div>
+      <div class="aspect-body"><strong>Subiectiv</strong> (al lui Moromete): iluzoriu, lent, contemplativ. <strong>Obiectiv–istoric</strong>: agresiv, inexorabil. Conflictul dintre ele = drama romanului.</div>
+    </div>
+    <div class="aspect-card" style="color:var(--neo-realism)">
+      <span class="aspect-icon">🍽️</span>
+      <div class="aspect-title">Scena cinei — prefigurare</div>
+      <div class="aspect-body">Frații vitregi stau ca gata să plece. Tensiunea latentă devine vizibilă. Microcosm al destrămarii familiei.</div>
+    </div>
+    <div class="aspect-card" style="color:var(--neo-realism)">
+      <span class="aspect-icon">🌳</span>
+      <div class="aspect-title">Tăierea salcâmului</div>
+      <div class="aspect-body">Desacralizare: salcâmul = axis mundi al familiei. „Ca să se mire proștii" — cinism dureros al lui Moromete față de destrămare.</div>
+    </div>
+    <div class="aspect-card" style="color:var(--neo-realism)">
+      <span class="aspect-icon">🌿</span>
+      <div class="aspect-title">Poiana lui Iocan</div>
+      <div class="aspect-body">Spațiu al colectivității masculine. Discuție politică, filozofică. Contrapunct al lumii interioare a familiei.</div>
+    </div>
+  </div>
+
+  <div class="section-label">Cele 4 conflicte</div>
+  <div class="two-col">
+    <div class="info-card">
+      <h3>Conflicte în roman</h3>
+      <ul>
+        <li>Moromete ↔ Fiii mari (Paraschiv, Nilă, Achim) — plecarea spre București</li>
+        <li>Moromete ↔ Catrina — noua soție, interese divergente</li>
+        <li>Moromete ↔ Sora lui — Guica, complicată</li>
+        <li>Moromete ↔ Nicolae (vol. II) — generație nouă, lume nouă</li>
+      </ul>
+    </div>
+    <div class="info-card">
+      <h3>Moduri de construcție</h3>
+      <ul>
+        <li>Naratori reflectori multipli</li>
+        <li>Tehnica decupajului</li>
+        <li>Acumularea detaliilor semnificative</li>
+        <li>Conflict simplu și conflict multiplu simultan</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════ -->
+<!-- 9. O SCRISOARE PIERDUTĂ -->
+<!-- ═══════════════════════════════════════ -->
+<section class="opera" id="scrisoare" style="color: var(--comedie)">
+  <div class="opera-accent" style="background: var(--comedie)"></div>
+
+  <div class="opera-header">
+    <div>
+      <div class="opera-titlu">O scrisoare pierdută</div>
+    </div>
+    <div class="opera-autor-block">
+      <div class="opera-autor-name">I.L. Caragiale</div>
+      <div class="opera-autor-years">1852 – 1912</div>
+      <div class="opera-pub">reprezentată 1884 · sursă: farsa electorală din 1883</div>
+    </div>
+  </div>
+
+  <div class="tag-row">
+    <span class="tag tag-tema">Farsa electorală</span>
+    <span class="tag tag-tema">Imoralitate publică și privată</span>
+    <span class="tag tag-curent" style="color:var(--comedie); border-color:var(--comedie); background:rgba(192,69,69,0.08)">Realism · Comedie de moravuri</span>
+  </div>
+
+  <div class="critic-quote" style="border-color:var(--comedie)">
+    <p>„O scrisoare pierdută rămâne capodopera teatrului comic (și nu numai) românesc"</p>
+    <div class="critic-name">— Nicolae Manolescu</div>
+  </div>
+
+  <div class="section-label">Compoziție</div>
+  <div class="comp-diagram" style="border-color:var(--comedie)">
+    <h3>4 acte · 3 zile · Structură geometrică impecabilă</h3>
+    <div class="comp-flow">
+      <div class="comp-node" style="border-color:rgba(192,69,69,0.4)">
+        <span class="num">I</span>
+        Expoziție<br><small style="color:var(--text-muted)">Scrisoarea pierdută; intriga Zoe</small>
+      </div>
+      <div class="comp-arrow">→</div>
+      <div class="comp-node" style="border-color:rgba(192,69,69,0.4)">
+        <span class="num">II</span>
+        Complicație<br><small style="color:var(--text-muted)">Apare Cațavencu (tardiv!); șantaj</small>
+      </div>
+      <div class="comp-arrow">→</div>
+      <div class="comp-node" style="border-color:rgba(192,69,69,0.4)">
+        <span class="num">III</span>
+        Punct Culminant<br><small style="color:var(--text-muted)">Adunarea; Dandanache surpriză</small>
+      </div>
+      <div class="comp-arrow">→</div>
+      <div class="comp-node" style="border-color:rgba(192,69,69,0.4)">
+        <span class="num">IV</span>
+        Deznodământ<br><small style="color:var(--text-muted)">Atmosfera refăcută; nimic nu s-a schimbat</small>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-label">Cele 5 tipuri de comic</div>
+  <div class="aspect-grid">
+    <div class="aspect-card" style="color:var(--comedie)">
+      <span class="aspect-icon">🎭</span>
+      <div class="aspect-title">Comic de situație</div>
+      <div class="aspect-body">Scrisoarea găsită/pierdută succesiv. Dandanache apare în loc de Cațavencu. Confuzii, coincidențe, surprize.</div>
+    </div>
+    <div class="aspect-card" style="color:var(--comedie)">
+      <span class="aspect-icon">💬</span>
+      <div class="aspect-title">Comic de limbaj</div>
+      <div class="aspect-body">„bampir", „remunerație", „famelie", „patuzsopt". Ticuri: „puțintică răbdare" (Trahanache), „Curat murdar!" (Pristanda).</div>
+    </div>
+    <div class="aspect-card" style="color:var(--comedie)">
+      <span class="aspect-icon">📛</span>
+      <div class="aspect-title">Comic de nume</div>
+      <div class="aspect-body">Trahanache (trahana=mâncare moale=incapabil), Farfuridi, Brânzovenescu, Dandanache (dandana=încurcătură).</div>
+    </div>
+    <div class="aspect-card" style="color:var(--comedie)">
+      <span class="aspect-icon">😂</span>
+      <div class="aspect-title">Comic de caracter + moravuri</div>
+      <div class="aspect-body">Tipuri fixe fără evoluție. Satira societatii politice ca sistem — nu cazuri individuale.</div>
+    </div>
+  </div>
+
+  <div class="section-label">Tipologiile piesei</div>
+  <div class="typo-grid" style="margin-bottom:32px">
+    <div class="typo-item"><strong>Zoe</strong><span>cocheta / adulterina</span></div>
+    <div class="typo-item"><strong>Trahanache</strong><span>încornoratul inofensiv</span></div>
+    <div class="typo-item"><strong>Tipătescu</strong><span>amorezul, prefectul</span></div>
+    <div class="typo-item"><strong>Cațavencu</strong><span>demagogul șantajist</span></div>
+    <div class="typo-item"><strong>Dandanache</strong><span>„mai prost și mai canalie"</span></div>
+    <div class="typo-item"><strong>Farfuridi</strong><span>demagogul comic</span></div>
+    <div class="typo-item"><strong>Pristanda</strong><span>funcționarul servil</span></div>
+    <div class="typo-item"><strong>Cetățeanul</strong><span>turmentat — poporul</span></div>
+  </div>
+
+  <div class="aspect-card" style="color:var(--comedie); max-width:100%; margin-bottom:16px">
+    <span class="aspect-icon">📝</span>
+    <div class="aspect-title">Titlul — articolul nehotărât „O"</div>
+    <div class="aspect-body">„<strong>O</strong>" scrisoare, nu „Scrisoarea" — banalitate crucială. Orice scrisoare, oricând, în orice județ. Satira e universală și repetabilă, nu un caz particular.</div>
+  </div>
+
+  <div class="final-quote" style="border-color:rgba(192,69,69,0.25)">
+    <p>„Nimic nu s-a schimbat" — finalul comediei: atmosfera festivă, toți se îmbrățișează. Satira corectă: sistemul e mai tare decât indivizii.</p>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════ -->
+<!-- 10. HARAP-ALB -->
+<!-- ═══════════════════════════════════════ -->
+<section class="opera" id="harap" style="color: var(--basm)">
+  <div class="opera-accent" style="background: var(--basm)"></div>
+
+  <div class="opera-header">
+    <div>
+      <div class="opera-titlu">Povestea lui Harap-Alb</div>
+    </div>
+    <div class="opera-autor-block">
+      <div class="opera-autor-name">Ion Creangă</div>
+      <div class="opera-autor-years">1839 – 1889</div>
+      <div class="opera-pub">publicat 1877 · „Convorbiri literare"</div>
+    </div>
+  </div>
+
+  <div class="tag-row">
+    <span class="tag tag-tema">Inițierea și maturizarea</span>
+    <span class="tag tag-tema">Lupta bine–rău</span>
+    <span class="tag tag-curent" style="color:var(--basm); border-color:var(--basm); background:rgba(200,90,58,0.08)">Basm cult</span>
+  </div>
+
+  <div class="critic-quote" style="border-color:var(--basm)">
+    <p>„e un chip de a dovedi că omul de soi bun se vădește sub orice strai și la orice vârstă"</p>
+    <div class="critic-name">— George Călinescu</div>
+  </div>
+
+  <div class="section-label">Compoziție</div>
+  <div class="comp-diagram" style="border-color:var(--basm)">
+    <h3>Acțiune liniară · Înlănțuire secvențe · Formulă inițială inovatoare</h3>
+    <div class="comp-flow">
+      <div class="comp-node" style="border-color:rgba(200,90,58,0.4)">
+        <span class="num">Plecarea</span>
+        Proba bunătății<br><small style="color:var(--text-muted)">Bătrâna – sfaturile tatălui</small>
+      </div>
+      <div class="comp-arrow">→</div>
+      <div class="comp-node" style="border-color:rgba(200,90,58,0.4)">
+        <span class="num">Fântâna</span>
+        Botezul inițiatic<br><small style="color:var(--text-muted)">Spânul îl coboară; „Harap-Alb"</small>
+      </div>
+      <div class="comp-arrow">→</div>
+      <div class="comp-node" style="border-color:rgba(200,90,58,0.4)">
+        <span class="num">Probele</span>
+        5 ajutători<br><small style="color:var(--text-muted)">Gerică, Setilă, Flămânzilă, Orbilă, Păsări-Lăți-Lungilă</small>
+      </div>
+      <div class="comp-arrow">→</div>
+      <div class="comp-node" style="border-color:rgba(200,90,58,0.4)">
+        <span class="num">Moarte–Renaștere</span>
+        Inițierea completă<br><small style="color:var(--text-muted)">Decapitare → reînviere</small>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-label">Aspecte distinctive</div>
+  <div class="aspect-grid">
+    <div class="aspect-card" style="color:var(--basm)">
+      <span class="aspect-icon">⚫⚪</span>
+      <div class="aspect-title">Titlul — oximoron</div>
+      <div class="aspect-body"><strong>Harap</strong> = rob negru (condiție exterioară). <strong>Alb</strong> = origine nobilă + calități sufletești pure. Identitatea e interioară, nu socială.</div>
+    </div>
+    <div class="aspect-card" style="color:var(--basm)">
+      <span class="aspect-icon">🕳️</span>
+      <div class="aspect-title">Scena fântânii — botez inițiatic</div>
+      <div class="aspect-body">Coborârea în fântână = coborâre în Infern (Hades). Spânul = impostorul care fură identitatea. Jurământul = legătura sacră.</div>
+    </div>
+    <div class="aspect-card" style="color:var(--basm)">
+      <span class="aspect-icon">😈</span>
+      <div class="aspect-title">Spânul — rău NECESAR</div>
+      <div class="aspect-body">„Și unii ca aceștia sunt trebuitori pe lume câteodată, pentru că fac pe oameni să prindă la minte." — fără opozant, nu există creștere.</div>
+    </div>
+    <div class="aspect-card" style="color:var(--basm)">
+      <span class="aspect-icon">🌲</span>
+      <div class="aspect-title">Pădurea labirint</div>
+      <div class="aspect-body">Pierderea sub sfatul părintesc = abandonarea ghidajului extern. Eroul trebuie să navigheze singur — condiție a maturizării.</div>
+    </div>
+  </div>
+
+  <div class="info-card" style="margin-bottom:16px">
+    <h3>Treptele inițierii</h3>
+    <ul>
+      <li><strong>Proba 1</strong> — bunătatea (mila față de bătrână deghizată)</li>
+      <li><strong>Proba 2</strong> — curajul (trecerea podul ursului, a tatălui)</li>
+      <li><strong>Probele lui Verde-Împărat</strong> — loialitate, inteligență, rezistență</li>
+      <li><strong>Moartea simbolică</strong> — decapitarea de Spân + reînviere = inițierea completă</li>
+    </ul>
+  </div>
+
+  <div class="final-quote" style="border-color:rgba(200,90,58,0.25)">
+    <p>„Amu cică era odată..." — formula inițială inovatoare față de basmul tradițional „A fost odată ca-n povești". Creangă plasează basmul în oralitate imediată.</p>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════ -->
+<!-- 11. ULTIMA NOAPTE -->
+<!-- ═══════════════════════════════════════ -->
+<section class="opera" id="ultima" style="color: var(--modernism-psih)">
+  <div class="opera-accent" style="background: var(--modernism-psih)"></div>
+
+  <div class="opera-header">
+    <div>
+      <div class="opera-titlu">Ultima noapte de dragoste, întâia noapte de război</div>
+    </div>
+    <div class="opera-autor-block">
+      <div class="opera-autor-name">Camil Petrescu</div>
+      <div class="opera-autor-years">1894 – 1957</div>
+      <div class="opera-pub">publicat 1930</div>
+    </div>
+  </div>
+
+  <div class="tag-row">
+    <span class="tag tag-tema">Iubire și gelozie</span>
+    <span class="tag tag-tema">Războiul demitizat</span>
+    <span class="tag tag-tema">Cunoaștere prin experiențe limită</span>
+    <span class="tag tag-curent" style="color:var(--modernism-psih); border-color:var(--modernism-psih); background:rgba(58,143,160,0.08)">Modernism psihologic · Roman de analiză</span>
+  </div>
+
+  <div class="critic-quote" style="border-color:var(--modernism-psih)">
+    <p>„Ceea ce izbutește mai bine autorul, nu este afundarea în regiunile obscure ale conștiinței, cât exactitatea aproape științifică în despicarea complexelor sufletești"</p>
+    <div class="critic-name">— Tudor Vianu</div>
+  </div>
+
+  <div class="section-label">Compoziție · 2 planuri temporale</div>
+  <div class="comp-diagram" style="border-color:var(--modernism-psih)">
+    <h3>Cronologie anulată · Memorie voluntară (≠ Proust) · Final deschis</h3>
+    <div class="comp-alt">
+      <div class="comp-side">
+        <strong style="font-family:var(--font-serif);font-style:italic;color:var(--modernism-psih)">Prezentul frontului</strong>
+        <p style="font-size:0.82rem;color:var(--text-muted);margin-top:6px">Discuția la popotă declanșează rememorarea. Cadrul narativ.</p>
+      </div>
+      <div class="comp-vs">⇌</div>
+      <div class="comp-side">
+        <strong style="font-family:var(--font-serif);font-style:italic;color:var(--modernism-psih)">Trecutul poveștii de iubire</strong>
+        <p style="font-size:0.82rem;color:var(--text-muted);margin-top:6px">Relația cu Ela; gelozia crescândă; analiza psihologică.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-label">Aspecte distinctive</div>
+  <div class="aspect-grid">
+    <div class="aspect-card" style="color:var(--modernism-psih)">
+      <span class="aspect-icon">🔬</span>
+      <div class="aspect-title">Crezul artistic</div>
+      <div class="aspect-body">„Eu nu pot vorbi onest decât la persoana I." Autenticitate = condiție a artei. Narațiunea la persoana I = limita și forța romanului.</div>
+    </div>
+    <div class="aspect-card" style="color:var(--modernism-psih)">
+      <span class="aspect-icon">👁️</span>
+      <div class="aspect-title">Ela — văzută NUMAI prin Gheorghidiu</div>
+      <div class="aspect-body">„Nu Ela se schimbă... ci felul în care o vede Ștefan" (Manolescu). Gelozia distorsionează realitatea. Ela poate fi nevinovată.</div>
+    </div>
+    <div class="aspect-card" style="color:var(--modernism-psih)">
+      <span class="aspect-icon">💰</span>
+      <div class="aspect-title">Moștenirea unchiului Tache</div>
+      <div class="aspect-body">Punct de cotitură: banii schimbă dinamica cuplului. Capitolul „Diagonalele unui testament" = debutului declinului.</div>
+    </div>
+    <div class="aspect-card" style="color:var(--modernism-psih)">
+      <span class="aspect-icon">⚔️</span>
+      <div class="aspect-title">Războiul demitizat total</div>
+      <div class="aspect-body">„Nu mai e nimic omenesc în noi." Haos, mizerie, teamă. Contrariul gloriei romantice. Primul roman anti-eroic din literatura română.</div>
+    </div>
+  </div>
+
+  <div class="final-quote" style="border-color:rgba(58,143,160,0.25)">
+    <p>„I-am lăsat absolut tot ce e în casă... adică tot trecutul." — finalul romanului: Gheorghidiu abandonează Ela și odată cu ea propria gelozie și propria iluzie.</p>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════ -->
+<!-- 12. RIGA CRYPTO -->
+<!-- ═══════════════════════════════════════ -->
+<section class="opera" id="riga" style="color: var(--modernism-erm)">
+  <div class="opera-accent" style="background: var(--modernism-erm)"></div>
+
+  <div class="opera-header">
+    <div>
+      <div class="opera-titlu">Riga Crypto și lapona Enigel</div>
+    </div>
+    <div class="opera-autor-block">
+      <div class="opera-autor-name">Ion Barbu</div>
+      <div class="opera-autor-years">1895 – 1961</div>
+      <div class="opera-pub">publicat 1924 · volumul „Joc secund" 1930</div>
+    </div>
+  </div>
+
+  <div class="tag-row">
+    <span class="tag tag-tema">Condiția ființei superioare/inferioare</span>
+    <span class="tag tag-tema">Iubire imposibilă</span>
+    <span class="tag tag-tema">Cunoașterea</span>
+    <span class="tag tag-curent" style="color:var(--modernism-erm); border-color:var(--modernism-erm); background:rgba(104,88,192,0.08)">Modernism interbelic · Etapa baladică/orientală</span>
+  </div>
+
+  <div class="critic-quote" style="border-color:var(--modernism-erm)">
+    <p>„Un Luceafăr cu rolurile inversate și într-un decor de o nebănuită noutate"</p>
+    <div class="critic-name">— Nicolae Manolescu</div>
+  </div>
+
+  <div class="section-label">Compoziție · Poveste în ramă</div>
+  <div class="comp-diagram" style="border-color:var(--modernism-erm)">
+    <h3>Primele 4 strofe = dialog menestrel–nuntaș · 7 tablouri poetice · Subintitulat „Baladă"</h3>
+    <div class="comp-flow">
+      <div class="comp-node" style="border-color:rgba(104,88,192,0.4)">
+        <span class="num">Ramă</span>
+        Nuntă în sat<br><small style="color:var(--text-muted)">Context festiv real</small>
+      </div>
+      <div class="comp-arrow">→</div>
+      <div class="comp-node" style="border-color:rgba(104,88,192,0.4)">
+        <span class="num">Enigel</span>
+        Drumul spre sud<br><small style="color:var(--text-muted)">Lapona aspiră la soare</small>
+      </div>
+      <div class="comp-arrow">→</div>
+      <div class="comp-node" style="border-color:rgba(104,88,192,0.4)">
+        <span class="num">3 chemări</span>
+        Crypto cheamă<br><small style="color:var(--text-muted)">Ritual magic de 3 ori</small>
+      </div>
+      <div class="comp-arrow">→</div>
+      <div class="comp-node" style="border-color:rgba(104,88,192,0.4)">
+        <span class="num">Tragedie</span>
+        Nuntă imposibilă<br><small style="color:var(--text-muted)">Crypto = ciupercă otravă</small>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-label">Luceafărul întors</div>
+  <div class="two-col">
+    <div class="info-card">
+      <h3>Comparație cu Luceafărul</h3>
+      <ul>
+        <li>La Eminescu: geniul (M) aspiră spre muritoarea (F)</li>
+        <li>La Barbu: superioara (F–Enigel) refuză inferiorul (M–Crypto)</li>
+        <li>La Eminescu: finalul = reabilitare/detașare a geniului</li>
+        <li>La Barbu: finalul = degradare/pieire a inferiorului</li>
+        <li>Ambele: incompatibilitate ontologică</li>
+      </ul>
+    </div>
+    <div class="info-card">
+      <h3>Semnificația numelor</h3>
+      <ul>
+        <li><strong>Crypto</strong> = criptic (ascuns) + criptogame (ciuperci, plante inferioare)</li>
+        <li><strong>Enigel</strong> = „engel" (suedeză) = înger</li>
+        <li>Crypto: „inimă ascunsă" — imposibilitatea comunicării</li>
+        <li>Enigel: aspirație spre lumină/cunoaștere (soare)</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section-label">Aspecte distinctive</div>
+  <div class="aspect-grid">
+    <div class="aspect-card" style="color:var(--modernism-erm)">
+      <span class="aspect-icon">🌞</span>
+      <div class="aspect-title">Drumul Enigelei — transhumanță</div>
+      <div class="aspect-body">Deplasarea cu renii spre sud = transhumanță reală + aspirație spre soare = cunoaștere. Enigel = ființa în ascensiune.</div>
+    </div>
+    <div class="aspect-card" style="color:var(--modernism-erm)">
+      <span class="aspect-icon">🍄</span>
+      <div class="aspect-title">Crypto — transformarea</div>
+      <div class="aspect-body">Refuzul Enigelei → Crypto devine ciupercă otrăvitoare. Dragostea neîmplinită = corupție a ființei inferioare.</div>
+    </div>
+    <div class="aspect-card" style="color:var(--modernism-erm)">
+      <span class="aspect-icon">💒</span>
+      <div class="aspect-title">Cele 3 nunți</div>
+      <div class="aspect-body">1. Nuntă reală (cadrul — împlinită). 2. Nuntă imposibilă Crypto–Enigel. 3. Nunta ciupercilor (degradat). Trei registre ale iubirii.</div>
+    </div>
+    <div class="aspect-card" style="color:var(--modernism-erm)">
+      <span class="aspect-icon">🔭</span>
+      <div class="aspect-title">Ion Barbu — poetul-matematician</div>
+      <div class="aspect-body">„Pentru mine poezia e o prelungire a geometriei." Poezia = structură abstractă, esențializare maximă. Hermetism = refuz al ornamentului.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════ -->
+<!-- 13. ACI SOSI PE VREMURI -->
+<!-- ═══════════════════════════════════════ -->
+<section class="opera" id="aci" style="color: var(--traditionalism)">
+  <div class="opera-accent" style="background: var(--traditionalism)"></div>
+
+  <div class="opera-header">
+    <div>
+      <div class="opera-titlu">Aci sosi pe vremuri</div>
+    </div>
+    <div class="opera-autor-block">
+      <div class="opera-autor-name">Ion Pillat</div>
+      <div class="opera-autor-years">1891 – 1945</div>
+      <div class="opera-pub">volum „Pe Argeș în sus" · 1933</div>
+    </div>
+  </div>
+
+  <div class="tag-row">
+    <span class="tag tag-tema">Trecerea ireversibilă a timpului</span>
+    <span class="tag tag-tema">Repetabilitatea experiențelor umane</span>
+    <span class="tag tag-curent" style="color:var(--traditionalism); border-color:var(--traditionalism); background:rgba(90,138,64,0.08)">Tradiționism interbelic</span>
+  </div>
+
+  <div class="critic-quote" style="border-color:var(--traditionalism)">
+    <p>„Capodopera lui Ion Pillat este Aci sosi pe vremuri — grațioasă, mișcătoare și invizibilă paralelă între două veacuri"</p>
+    <div class="critic-name">— George Călinescu</div>
+  </div>
+
+  <div class="section-label">Compoziție · 2 planuri temporale în oglindă</div>
+  <div class="comp-diagram" style="border-color:var(--traditionalism)">
+    <h3>19 distihuri + monovers final · Simetrie și opoziție ATUNCI–ACUM</h3>
+    <div class="comp-alt">
+      <div class="comp-side">
+        <strong style="font-family:var(--font-serif);font-style:italic;color:var(--traditionalism)">ATUNCI — Trecut</strong>
+        <p style="font-size:0.82rem;color:var(--text-muted);margin-top:6px">Bunica Calyopi + logodnicul. Berlina. Verbe la perfect simplu. Sec. XIX.</p>
+      </div>
+      <div class="comp-vs">≅</div>
+      <div class="comp-side">
+        <strong style="font-family:var(--font-serif);font-style:italic;color:var(--traditionalism)">ACUM — Prezent</strong>
+        <p style="font-size:0.82rem;color:var(--text-muted);margin-top:6px">Poetul + iubita. Trăsura ta. Verbe la imperfect. Sec. XX.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-label">Aspecte distinctive</div>
+  <div class="aspect-grid">
+    <div class="aspect-card" style="color:var(--traditionalism)">
+      <span class="aspect-icon">🕷️</span>
+      <div class="aspect-title">Casa amintirii — timp vizual</div>
+      <div class="aspect-body">Păianjenii = curgerea timpului vizibilă. Casa = spațiu al memoriei stratificate. Trecutul e prezent fizic în ruinare.</div>
+    </div>
+    <div class="aspect-card" style="color:var(--traditionalism)">
+      <span class="aspect-icon">🎵</span>
+      <div class="aspect-title">Calyopi — muza eternității</div>
+      <div class="aspect-body">Kalliope = muza poeziei epice grecești. Iubirea bunicii capătă dimensiune eternă, mitologică — nu e simplă amintire de familie.</div>
+    </div>
+    <div class="aspect-card" style="color:var(--traditionalism)">
+      <span class="aspect-icon">🔔</span>
+      <div class="aspect-title">Clopotul — laitmotiv existențial</div>
+      <div class="aspect-body">„De nuntă sau de moarte, în turnul vechi din sat" — bate mereu, pentru toate evenimentele. Viața și moartea = același semnal.</div>
+    </div>
+    <div class="aspect-card" style="color:var(--traditionalism)">
+      <span class="aspect-icon">🚗</span>
+      <div class="aspect-title">Berlina → Trăsura ta</div>
+      <div class="aspect-body">Tipul de vehicul se schimbă; actul (sosirea iubirii) e același. Repetabilitate perfectă în forme imperceptibil modificate.</div>
+    </div>
+  </div>
+
+  <div class="section-label">Moduri de construcție</div>
+  <div class="two-col">
+    <div class="info-card">
+      <h3>Procedee poetice</h3>
+      <ul>
+        <li>Repetiție vers-titlu „Aci sosi pe vremuri" = laitmotiv temporal</li>
+        <li>Modificare timpuri verbale: perfect simplu → imperfect (apropierea de prezent)</li>
+        <li>Punctele de suspensie = ruptura temporală vizibilă</li>
+        <li>Monoversul final = singurătate după revelație</li>
+      </ul>
+    </div>
+    <div class="info-card">
+      <h3>Concepte filozofice</h3>
+      <ul>
+        <li><em>Fugit irreparabile tempus</em> (Vergiliu) — timpul fuge ireversibil</li>
+        <li><em>Fortuna labilis</em> — soarta schimbătoare</li>
+        <li><em>Vanitas vanitatum</em> — zădărnicia lucrurilor</li>
+        <li>Manolescu: „bunicii iau totul de la capăt în forme imperceptibil modificate"</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="final-quote" style="border-color:rgba(90,138,64,0.25)">
+    <p>Titlul: „<strong>aci</strong>" (arhaism regional) + „<strong>pe vremuri</strong>" = spațiu-timp arhaic, suspendat. Locul și clipa devin eterne prin repetiție.</p>
+  </div>
+</section>
+
+</main><!-- /main -->
+
+<script>
+// Scroll progress
+const bar = document.getElementById('progress-bar');
+window.addEventListener('scroll', () => {
+  const h = document.documentElement;
+  const pct = (h.scrollTop / (h.scrollHeight - h.clientHeight)) * 100;
+  bar.style.width = pct + '%';
+});
+
+// Reveal on scroll
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('visible');
+      observer.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.06, rootMargin: '0px 0px -40px 0px' });
+
+document.querySelectorAll('.opera').forEach(el => observer.observe(el));
+
+// Active sidebar link
+const sections = document.querySelectorAll('.opera');
+const links = document.querySelectorAll('.sidebar-link');
+
+const activeObserver = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      links.forEach(l => l.classList.remove('active'));
+      const link = document.querySelector('.sidebar-link[href="#' + e.target.id + '"]');
+      if (link) link.classList.add('active');
+    }
+  });
+}, { threshold: 0.3 });
+
+sections.forEach(s => activeObserver.observe(s));
+
+// Mobile sidebar
+function toggleSidebar() {
+  document.getElementById('sidebar').classList.toggle('open');
+}
+
+document.getElementById('main').addEventListener('click', () => {
+  document.getElementById('sidebar').classList.remove('open');
+});
+</script>
+</body>
+</html>
