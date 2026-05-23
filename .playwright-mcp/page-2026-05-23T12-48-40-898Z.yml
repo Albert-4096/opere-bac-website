@@ -1,0 +1,1115 @@
+- generic [active] [ref=e1]:
+  - navigation [ref=e3]:
+    - generic [ref=e4]:
+      - heading "Literatură Română" [level=1] [ref=e5]
+      - paragraph [ref=e6]: BAC · 13 opere
+    - generic [ref=e7]:
+      - generic [ref=e8]: Poezie
+      - link "Luceafărul · Eminescu" [ref=e9] [cursor=pointer]:
+        - /url: "#luceafarul"
+        - text: Luceafărul · Eminescu
+      - link "Eu nu strivesc corola · Blaga" [ref=e11] [cursor=pointer]:
+        - /url: "#corola"
+        - text: Eu nu strivesc corola · Blaga
+      - link "Plumb · Bacovia" [ref=e13] [cursor=pointer]:
+        - /url: "#plumb"
+        - text: Plumb · Bacovia
+      - link "Riga Crypto · Barbu" [ref=e15] [cursor=pointer]:
+        - /url: "#riga"
+        - text: Riga Crypto · Barbu
+      - link "Aci sosi pe vremuri · Pillat" [ref=e17] [cursor=pointer]:
+        - /url: "#aci"
+        - text: Aci sosi pe vremuri · Pillat
+    - generic [ref=e19]:
+      - generic [ref=e20]: Proză
+      - link "Baltagul · Sadoveanu" [ref=e21] [cursor=pointer]:
+        - /url: "#baltagul"
+        - text: Baltagul · Sadoveanu
+      - link "Ion · Rebreanu" [ref=e23] [cursor=pointer]:
+        - /url: "#ion"
+        - text: Ion · Rebreanu
+      - link "Enigma Otiliei · Călinescu" [ref=e25] [cursor=pointer]:
+        - /url: "#enigma"
+        - text: Enigma Otiliei · Călinescu
+      - link "Moara cu noroc · Slavici" [ref=e27] [cursor=pointer]:
+        - /url: "#moara"
+        - text: Moara cu noroc · Slavici
+      - link "Moromeții · Preda" [ref=e29] [cursor=pointer]:
+        - /url: "#morometii"
+        - text: Moromeții · Preda
+      - link "Ultima noapte · C. Petrescu" [ref=e31] [cursor=pointer]:
+        - /url: "#ultima"
+        - text: Ultima noapte · C. Petrescu
+      - link "Harap-Alb · Creangă" [ref=e33] [cursor=pointer]:
+        - /url: "#harap"
+        - text: Harap-Alb · Creangă
+    - generic [ref=e35]:
+      - generic [ref=e36]: Teatru
+      - link "O scrisoare pierdută · Caragiale" [ref=e37] [cursor=pointer]:
+        - /url: "#scrisoare"
+        - text: O scrisoare pierdută · Caragiale
+  - main [ref=e39]:
+    - generic [ref=e40]:
+      - generic [ref=e41]: Ghid vizual de studiu
+      - heading "13 Opere literare esențiale" [level=1] [ref=e42]:
+        - text: 13 Opere
+        - emphasis [ref=e43]: literare
+        - text: esențiale
+      - paragraph [ref=e44]: Toate operele pentru Bacalaureatul de Română, prezentate vizual și structurat — cu teme, curente, compoziție, citate critice și aspectele esențiale de memorat.
+      - generic [ref=e45]:
+        - generic [ref=e46]:
+          - generic [ref=e47]: "13"
+          - generic [ref=e48]: Opere studiate
+        - generic [ref=e49]:
+          - generic [ref=e50]: "5"
+          - generic [ref=e51]: Curente literare
+        - generic [ref=e52]:
+          - generic [ref=e53]: "3"
+          - generic [ref=e54]: "Genuri: lirică, epică, dramatică"
+      - generic [ref=e55]:
+        - generic [ref=e56]: Romantism
+        - generic [ref=e58]: Simbolism
+        - generic [ref=e60]: Modernism expresionist
+        - generic [ref=e62]: Modernism ermetic
+        - generic [ref=e64]: Modernism psihologic
+        - generic [ref=e66]: Realism
+        - generic [ref=e68]: Neorealism
+        - generic [ref=e70]: Tradiționism
+        - generic [ref=e72]: Comedie de moravuri
+        - generic [ref=e74]: Basm cult
+    - generic [ref=e76]:
+      - generic [ref=e78]:
+        - generic [ref=e80]: Luceafărul
+        - generic [ref=e81]:
+          - generic [ref=e82]: Mihai Eminescu
+          - generic [ref=e83]: 1850 – 1898
+          - generic [ref=e84]: publicat 1883 · Almanahul Societății Carpatice
+      - generic [ref=e85]:
+        - generic [ref=e86]: Condiția omului de geniu
+        - generic [ref=e87]: Iubire absolută vs. iubire pământeană
+        - generic [ref=e88]: Romantism
+      - generic [ref=e89]:
+        - text: “
+        - paragraph [ref=e90]: „chintesența gândirii poetice eminesciene, testamentul literar al poetului"
+        - generic [ref=e91]: — George Călinescu
+      - generic [ref=e92]: Compoziție
+      - generic [ref=e93]:
+        - heading "4 tablouri · 98 catrene · Alternanță cosmică ↔ terestră" [level=3] [ref=e94]
+        - generic [ref=e95]:
+          - generic [ref=e96]:
+            - generic [ref=e97]: I
+            - text: Cosmic
+            - text: Fata de împărat îl cheamă pe Luceafăr
+          - generic [ref=e98]: →
+          - generic [ref=e99]:
+            - generic [ref=e100]: II
+            - text: Terestru
+            - text: Idila cu Cătălin; limbaj popular
+          - generic [ref=e101]: →
+          - generic [ref=e102]:
+            - generic [ref=e103]: III
+            - text: Cosmic
+            - text: Hyperion la Demiurg; călătorie inversă
+          - generic [ref=e104]: →
+          - generic [ref=e105]:
+            - generic [ref=e106]: IV
+            - text: Terestru
+            - text: Refuzul Luceafărului; dezlegarea
+      - generic [ref=e107]: Moduri de construcție
+      - generic [ref=e108]:
+        - generic [ref=e109]:
+          - heading "Procedee esențiale" [level=3] [ref=e110]
+          - list [ref=e111]:
+            - listitem [ref=e112]:
+              - text: –
+              - strong [ref=e113]: Antiteза
+              - text: — etern/efemer, cosmic/terestru
+            - listitem [ref=e114]:
+              - text: –
+              - strong [ref=e115]: Oximoron
+              - text: — „Nemuritor și rece"
+            - listitem [ref=e116]:
+              - text: –
+              - strong [ref=e117]: Simetrie
+              - text: — tablouri I–III (cosmic) ↔ II–IV (terestru)
+            - listitem [ref=e118]:
+              - text: –
+              - strong [ref=e119]: Surse
+              - text: — basm popular + Schopenhauer + mitologie
+            - listitem [ref=e120]:
+              - text: –
+              - strong [ref=e121]: Incipit basmică
+              - text: — „A fost odată ca-n povești…"
+        - generic [ref=e122]:
+          - heading "Cei doi poli ai antitezei" [level=3] [ref=e123]
+          - generic [ref=e124]:
+            - generic [ref=e125]:
+              - heading "Hyperion / Geniu" [level=4] [ref=e126]
+              - paragraph [ref=e127]: Nemuritor, rece, abstract, cosmic, singur
+            - generic [ref=e128]: ≠
+            - generic [ref=e129]:
+              - heading "Cătălin / Om comun" [level=4] [ref=e130]
+              - paragraph [ref=e131]: Muritor, cald, concret, terestru, fericit
+      - generic [ref=e132]: Aspecte vizuale distinctive
+      - generic [ref=e133]:
+        - generic [ref=e134]:
+          - generic [ref=e135]: 🌟
+          - generic [ref=e136]: Titlul — dublu simbol
+          - generic [ref=e137]:
+            - strong [ref=e138]: Luceafăr
+            - text: = lucifer (cel care lucește).
+            - strong [ref=e139]: Hyperion
+            - text: = cel care merge deasupra. Planeta Venus = steaua dimineatii si a serii.
+        - generic [ref=e140]:
+          - generic [ref=e141]: 🪟
+          - generic [ref=e142]: Fereastra — motiv dual
+          - generic [ref=e143]: Granița dintre lumea terestră și cea cosmică. Prin fereastră fata îl cheamă, prin fereastră el coboară.
+        - generic [ref=e144]:
+          - generic [ref=e145]: 🌌
+          - generic [ref=e146]: Tabloul III — Călătoria cosmică
+          - generic [ref=e147]: "Hyperion = „fulger neîntrerupt\". Călătorie inversă față de Geneză — din prezent spre haosul primordial. Singura cerere: moartea."
+        - generic [ref=e148]:
+          - generic [ref=e149]: ⚡
+          - generic [ref=e150]: Răspunsul Demiurgului
+          - generic [ref=e151]: Nu poate oferi moartea. Hyperion poate deveni om, dar va pierde nemurirea — dilemă imposibilă. Îi oferă în schimb puterea si gloria.
+      - generic [ref=e152]: Cele 7 mituri
+      - generic [ref=e153]:
+        - generic [ref=e154]: Nașterea universului
+        - generic [ref=e155]: Mitic erotic / Zburătorului
+        - generic [ref=e156]: Oniric
+        - generic [ref=e157]: Întoarcerea la elemente
+        - generic [ref=e158]: Creatorului
+        - generic [ref=e159]: Omului de geniu
+        - generic [ref=e160]: Astral
+      - paragraph [ref=e162]: „Trăind în cercul vostru strâmt / Norocul vă petrece, / Ci eu în lumea mea mă simt / Nemuritor și rece."
+    - generic [ref=e163]:
+      - generic [ref=e165]:
+        - generic [ref=e167]: Eu nu strivesc corola de minuni a lumii
+        - generic [ref=e168]:
+          - generic [ref=e169]: Lucian Blaga
+          - generic [ref=e170]: 1895 – 1961
+          - generic [ref=e171]: volum „Poemele luminii" · 1919
+      - generic [ref=e172]:
+        - generic [ref=e173]: Cunoașterea
+        - generic [ref=e174]: Rolul artei și al poetului
+        - generic [ref=e175]: Artă poetică (ars poetica)
+        - generic [ref=e176]: Modernism interbelic · Expresionism
+      - generic [ref=e177]:
+        - text: “
+        - paragraph [ref=e178]: „unul dintre cei mai originali creatori de imagini ai literaturii noastre"
+        - generic [ref=e179]: — Eugen Lovinescu
+      - generic [ref=e180]: Compoziție
+      - generic [ref=e181]:
+        - heading "3 secvențe lirice · vers liber · ingambament" [level=3] [ref=e182]
+        - generic [ref=e183]:
+          - generic [ref=e184]:
+            - generic [ref=e185]: I
+            - text: Declarația
+            - text: „Eu nu strivesc…" — teza artei poetice
+          - generic [ref=e186]: →
+          - generic [ref=e187]:
+            - generic [ref=e188]: II
+            - text: Contrast
+            - text: „alții" = cunoașterea rațională (luminii altora)
+          - generic [ref=e189]: →
+          - generic [ref=e190]:
+            - generic [ref=e191]: III
+            - text: Revelație
+            - text: „dar eu" — antiteза prin conjuncție adversativă
+      - generic [ref=e192]: Moduri de construcție
+      - generic [ref=e193]:
+        - generic [ref=e194]:
+          - heading "Procedee cheie" [level=3] [ref=e195]
+          - list [ref=e196]:
+            - listitem [ref=e197]:
+              - text: – Verb negativ „
+              - strong [ref=e198]: nu strivesc
+              - text: "\" = refuzul cunoașterii raționale"
+            - listitem [ref=e199]:
+              - text: "– Metaforă revelatorie:"
+              - emphasis [ref=e200]: „corola de minuni"
+            - listitem [ref=e201]:
+              - text: "– Antiteză centrală:"
+              - emphasis [ref=e202]: lumina mea
+              - text: vs
+              - emphasis [ref=e203]: lumina altora
+            - listitem [ref=e204]: – Lirism subiectiv; eul liric omniprezent
+            - listitem [ref=e205]:
+              - text: – „
+              - strong [ref=e206]: dar eu
+              - text: "\" = cel mai scurt vers — forță maximă prin minimalism"
+        - generic [ref=e207]:
+          - heading "Corola de minuni — ce cuprinde?" [level=3] [ref=e208]
+          - list [ref=e209]:
+            - listitem [ref=e210]: – Florile — frumusețea naturii
+            - listitem [ref=e211]: – Ochii — fereastra sufletului
+            - listitem [ref=e212]: – Buzele — iubirea, cuvântul
+            - listitem [ref=e213]: – Mormintele — misterul morții și al vieții
+      - generic [ref=e214]: Aspecte vizuale distinctive
+      - generic [ref=e215]:
+        - generic [ref=e216]:
+          - generic [ref=e217]: 🌙
+          - generic [ref=e218]: 2 tipuri de cunoaștere
+          - generic [ref=e219]:
+            - strong [ref=e220]: Paradisiacă
+            - text: (rațională) = reduce misterul, „strivește".
+            - strong [ref=e221]: Luciferică
+            - text: (poetică) = sporește misterul, revelează. Blaga alege
+            - emphasis [ref=e222]: lucifericul
+            - text: .
+        - generic [ref=e223]:
+          - generic [ref=e224]: 💡
+          - generic [ref=e225]: Lumina — simbol dublu
+          - generic [ref=e226]:
+            - emphasis [ref=e227]: Lumina mea
+            - text: (poetic, sporitor) vs
+            - emphasis [ref=e228]: lumina altora
+            - text: (rațional, reducător). Nu opoziție lumină-întuneric, ci
+            - strong [ref=e229]: calitate
+            - text: a luminii.
+        - generic [ref=e230]:
+          - generic [ref=e231]: 💞
+          - generic [ref=e232]: Iubirea — instrument de cunoaștere
+          - generic [ref=e233]:
+            - text: Nu sentiment, ci
+            - strong [ref=e234]: instrument epistemic
+            - text: . Prin iubire se revelează misterul — nu se rezolvă.
+        - generic [ref=e235]:
+          - generic [ref=e236]: 🔆
+          - generic [ref=e237]: Luna — mediator cosmic
+          - generic [ref=e238]: Luna adaugă mister, nu luminează rațional. Simbol al cunoașterii luciferice — reflectă lumina fără a arde.
+    - generic [ref=e239]:
+      - generic [ref=e241]:
+        - generic [ref=e243]: Plumb
+        - generic [ref=e244]:
+          - generic [ref=e245]: George Bacovia
+          - generic [ref=e246]: 1881 – 1957
+          - generic [ref=e247]: deschide volumul „Plumb" · 1916
+      - generic [ref=e248]:
+        - generic [ref=e249]: Moartea iubirii
+        - generic [ref=e250]: Condiția artistului izolat
+        - generic [ref=e251]: Spaima de neant
+        - generic [ref=e252]: Simbolism · cu deschideri spre modernism
+      - generic [ref=e253]:
+        - text: “
+        - paragraph [ref=e254]: „Bacovia aparține unei faze mai târzii a simbolismului, în care [...] se presimte un modernism mai acut, scindat"
+        - generic [ref=e255]: — Rodica Zafiu
+      - generic [ref=e256]: Compoziție
+      - generic [ref=e257]:
+        - heading "2 catrene simetrice · rimă îmbrățișată · 10 silabe · „plumb\" repetat de 6 ori" [level=3] [ref=e258]
+        - generic [ref=e259]:
+          - generic [ref=e260]:
+            - strong [ref=e261]: Strofa I
+            - paragraph [ref=e262]:
+              - text: Lumea
+              - strong [ref=e263]: exterioară
+              - text: ca imens cimitir
+              - text: "Decor funerar: sicrie, coroane, cavou"
+          - generic [ref=e264]: ≡
+          - generic [ref=e265]:
+            - strong [ref=e266]: Strofa II
+            - paragraph [ref=e267]:
+              - text: Lumea
+              - strong [ref=e268]: interioară
+              - text: — la fel de moartă
+              - text: Motivul aripilor de plumb = zbor imposibil
+      - generic [ref=e269]: Moduri de construcție
+      - generic [ref=e270]:
+        - generic [ref=e271]:
+          - heading "Procedee simboliste" [level=3] [ref=e272]
+          - list [ref=e273]:
+            - listitem [ref=e274]:
+              - text: –
+              - strong [ref=e275]: Laitmotiv
+              - text: — „stam singur" + „plumb" (×6)
+            - listitem [ref=e276]:
+              - text: –
+              - strong [ref=e277]: Metaforă-oximoron
+              - text: — „sicriele de plumb"
+            - listitem [ref=e278]:
+              - text: –
+              - strong [ref=e279]: Sugestie și sintezie
+              - text: — greutate + culoare + sunet
+            - listitem [ref=e280]:
+              - text: –
+              - strong [ref=e281]: Muzicalitate gravă
+              - text: "— sonorități închise: u, â, o"
+            - listitem [ref=e282]:
+              - text: –
+              - strong [ref=e283]: Paralelism sintactic
+              - text: — simetrie strofică
+        - generic [ref=e284]:
+          - heading "Semnificația lui PLUMB" [level=3] [ref=e285]
+          - list [ref=e286]:
+            - listitem [ref=e287]: – Metal gri-gălbui — culoarea morții, putreziciunii
+            - listitem [ref=e288]: – Greutate extremă — imposibilitatea eliberării
+            - listitem [ref=e289]: – Cuvânt-sentință — circularitate, fatalitate
+            - listitem [ref=e290]: "– Bacovia: „Plumbul e galben\" — mărturisire directă"
+            - listitem [ref=e291]: "– Conotație sonoră: sunet dens, înfundat"
+      - generic [ref=e292]: Aspecte vizuale distinctive
+      - generic [ref=e293]:
+        - generic [ref=e294]:
+          - generic [ref=e295]: 🪶
+          - generic [ref=e296]: Aripile de plumb
+          - generic [ref=e297]:
+            - text: "Oximoron vizual: aripa = zbor, eliberare. Plumb = imposibilitate."
+            - strong [ref=e298]: Zbor în jos
+            - text: ", nu în sus. Doborârea în loc de înălțare."
+        - generic [ref=e299]:
+          - generic [ref=e300]: 😴
+          - generic [ref=e301]: „Dormea întors amorul meu de plumb"
+          - generic [ref=e302]: Somnul = simbol al morții. „Întors" = înstrăinare totală. Amorul nu mai e viu — e mort și rece ca plumbul.
+        - generic [ref=e303]:
+          - generic [ref=e304]: 🏚️
+          - generic [ref=e305]: Opoziția falsă afară–înăuntru
+          - generic [ref=e306]:
+            - text: Strofa I = exterior funerar. Strofa II = interior la fel de funerar.
+            - strong [ref=e307]: Nu există refugiu
+            - text: — moartea e pretutindeni.
+        - generic [ref=e308]:
+          - generic [ref=e309]: ⚰️
+          - generic [ref=e310]: „Stam singur lângă mort"
+          - generic [ref=e311]: "Înstrăinarea de sine: singur nu lângă altul, ci lângă propria iubire moartă. Subiectul și obiectul se confundă."
+    - generic [ref=e312]:
+      - generic [ref=e314]:
+        - generic [ref=e316]: Baltagul
+        - generic [ref=e317]:
+          - generic [ref=e318]: Mihail Sadoveanu
+          - generic [ref=e319]: 1880 – 1961
+          - generic [ref=e320]: publicat 1930
+      - generic [ref=e321]:
+        - generic [ref=e322]: Monografia satului de munte
+        - generic [ref=e323]: Călătorie inițiatică și justițiară
+        - generic [ref=e324]: Iubire matrimonială
+        - generic [ref=e325]: Realism tradițional mitic · Roman interbelic
+      - generic [ref=e326]:
+        - text: “
+        - paragraph [ref=e327]: „Baltagul e un roman realist în sensul cel mai propriu"
+        - generic [ref=e328]: — Nicolae Manolescu
+      - generic [ref=e329]: Compoziție · Structură
+      - generic [ref=e330]:
+        - 'heading "16 capitole · Perspectivă obiectivă · Timp: calendar religios (atemporalitate)" [level=3] [ref=e331]'
+        - generic [ref=e332]:
+          - generic [ref=e333]:
+            - generic [ref=e334]: Măgura Tarcăului
+            - text: Punctul de plecare
+            - text: Nechifor dispărut
+          - generic [ref=e335]: →
+          - generic [ref=e336]:
+            - generic [ref=e337]: Dorna
+            - text: Urmele lui
+            - text: Investigație
+          - generic [ref=e338]: →
+          - generic [ref=e339]:
+            - generic [ref=e340]: Bistrița
+            - text: Descoperirea
+            - text: Parastas = climax
+          - generic [ref=e341]: →
+          - generic [ref=e342]:
+            - generic [ref=e343]: Justițiar
+            - text: Pedepsirea
+            - text: Vitoria + baltag
+      - generic [ref=e344]: Cele 3 mituri
+      - generic [ref=e345]:
+        - generic [ref=e346]:
+          - generic [ref=e347]: 🌸
+          - generic [ref=e348]: Mitul Isis–Osiris
+          - generic [ref=e349]: Vitoria = Isis care îl caută pe soțul mort (Osiris). Reconstituire, înmormântare ritualică, restabilirea ordinii cosmice.
+        - generic [ref=e350]:
+          - generic [ref=e351]: 🐑
+          - generic [ref=e352]: Mitul Mioritic
+          - generic [ref=e353]: "Motto: „Stăpâne, stăpâne / Mai cheamă și-un câine.\" Acceptarea morții în cheie cosmică — dar Vitoria nu acceptă, ci acționează."
+        - generic [ref=e354]:
+          - generic [ref=e355]: 🌊
+          - generic [ref=e356]: Marea Trecere
+          - generic [ref=e357]: Moartea ca trecere spre alt plan. Înmormântarea = ritual sacru. Parastasul = punct culminant dramatic.
+      - generic [ref=e358]: Aspecte distinctive
+      - generic [ref=e359]:
+        - generic [ref=e360]:
+          - generic [ref=e361]: ⚔️
+          - generic [ref=e362]: Baltagul — simbol cu 2 tăișuri
+          - generic [ref=e363]: Arma crimei = arma dreptății. Purificat simbolic prin actul justițiar al lui Gheorghiță. Obiect ce mediază ordinea cosmică.
+        - generic [ref=e364]:
+          - generic [ref=e365]: 👩
+          - generic [ref=e366]: Vitoria — „Hamlet feminin"
+          - generic [ref=e367]: "G. Călinescu: „Hamlet feminin\". Investigatoare, justițiară, exponentul speței. Voință absolută — nu doliu pasiv."
+        - generic [ref=e368]:
+          - generic [ref=e369]: 🧒
+          - generic [ref=e370]: Gheorghiță — inițiere
+          - generic [ref=e371]: Coborârea în râpă = probă inițiatică. Băiat → bărbat. Bildungsroman în paralel cu intriga polițistă.
+        - generic [ref=e372]:
+          - generic [ref=e373]: 🗺️
+          - generic [ref=e374]: Toponime simbolice
+          - generic [ref=e375]:
+            - strong [ref=e376]: Doi Meri
+            - text: ","
+            - strong [ref=e377]: Râul Neagra
+            - text: ". Nume:"
+            - emphasis [ref=e378]: Vitoria
+            - text: =victorie,
+            - emphasis [ref=e379]: Gheorghiță
+            - text: =Sf. Gheorghe,
+            - emphasis [ref=e380]: Nechifor
+            - text: =purtător de victorie.
+      - generic [ref=e381]:
+        - heading "Roman POLIMORF — 5 dimensiuni" [level=3] [ref=e382]
+        - generic [ref=e383]:
+          - generic [ref=e384]: Dragoste
+          - generic [ref=e385]: Roman polițist
+          - generic [ref=e386]: Mitic
+          - generic [ref=e387]: Monografic
+          - generic [ref=e388]: Bildungsroman
+    - generic [ref=e389]:
+      - generic [ref=e391]:
+        - generic [ref=e393]: Ion
+        - generic [ref=e394]:
+          - generic [ref=e395]: Liviu Rebreanu
+          - generic [ref=e396]: 1885 – 1944
+          - generic [ref=e397]: publicat 1920 · „momentul Rebreanu"
+      - generic [ref=e398]:
+        - generic [ref=e399]: Obsesia pământului
+        - generic [ref=e400]: Condiția intelectualului în Ardeal
+        - generic [ref=e401]: Realism obiectiv · Roman interbelic
+      - generic [ref=e402]:
+        - text: “
+        - paragraph [ref=e403]: „Ion este o epopee perfectă"
+        - generic [ref=e404]: — George Călinescu
+      - generic [ref=e405]: Compoziție · Structură sferoidă (circulară)
+      - generic [ref=e406]:
+        - heading "2 părți · Capitol I „Începutul\" → Capitol final „Sfârșitul\"" [level=3] [ref=e407]
+        - generic [ref=e408]:
+          - generic [ref=e409]:
+            - strong [ref=e410]: Glasul Pământului
+            - paragraph [ref=e411]: Obsesia pământului → căsătoria cu Ana (bogată) → dobândirea pământului
+          - generic [ref=e412]: ⊕
+          - generic [ref=e413]:
+            - strong [ref=e414]: Glasul Iubirii
+            - paragraph [ref=e415]: Dragostea pentru Florica → conflictul → moartea lui Ion și a Anei
+      - generic [ref=e416]: Aspecte distinctive
+      - generic [ref=e417]:
+        - generic [ref=e418]:
+          - generic [ref=e419]: 🌱
+          - generic [ref=e420]: Geneza romanului — 3 scene reale
+          - generic [ref=e421]: 1. Flăcăul fără pământ. 2. Fata bogată bătută de tată. 3. Țăranul sărutând pământul. Rebreanu le-a trăit/observat direct.
+        - generic [ref=e422]:
+          - generic [ref=e423]: 💃
+          - generic [ref=e424]: Hora de duminică — scenă-cheie
+          - generic [ref=e425]:
+            - text: Expoziție + scenă etnografică + toate conflictele
+            - emphasis [ref=e426]: in nuce
+            - text: . Microcosm al romanului întreg.
+        - generic [ref=e427]:
+          - generic [ref=e428]: ⛏️
+          - generic [ref=e429]: Moartea lui Ion — cu sapa
+          - generic [ref=e430]: "Ucis cu sapa = unealta pământului. Pământul îl reclamă. Mesaj moral: posesiunea distructivă se pedepsește."
+        - generic [ref=e431]:
+          - generic [ref=e432]: 🛣️
+          - generic [ref=e433]: Drumul — metaforă a vieții
+          - generic [ref=e434]: "Incipit și final: „drumul [...] se pierde în șoseaua cea mare și fără început.\" Structură sferoidă: viața = drum circular, fără sens absolut."
+      - generic [ref=e435]: Moduri de construcție
+      - generic [ref=e436]:
+        - generic [ref=e437]:
+          - heading "Tehnici narative" [level=3] [ref=e438]
+          - list [ref=e439]:
+            - listitem [ref=e440]:
+              - text: –
+              - strong [ref=e441]: Perspectivă obiectivă
+              - text: — narator omniscient heterodiegetic
+            - listitem [ref=e442]:
+              - text: –
+              - strong [ref=e443]: Tehnica focalizării
+              - text: — apropiere variabilă de personaje
+            - listitem [ref=e444]:
+              - text: –
+              - strong [ref=e445]: Tehnica contrapunctului
+              - text: — Ana ↔ Florica (iubire forțată vs. iubire reală)
+            - listitem [ref=e446]:
+              - text: –
+              - strong [ref=e447]: Tehnica detaliului
+              - text: — realism balzacian
+        - generic [ref=e448]:
+          - heading "Personaje-cheie" [level=3] [ref=e449]
+          - generic [ref=e450]:
+            - generic [ref=e451]:
+              - strong [ref=e452]: Ion
+              - text: personaj eponim; reprezentant al lumii
+            - generic [ref=e453]:
+              - strong [ref=e454]: Ana
+              - text: sacrificata; suicid
+            - generic [ref=e455]:
+              - strong [ref=e456]: Florica
+              - text: iubita; superficială
+            - generic [ref=e457]:
+              - strong [ref=e458]: Herdelea
+              - text: intelectualul ardelean
+    - generic [ref=e459]:
+      - generic [ref=e461]:
+        - generic [ref=e463]: Enigma Otiliei
+        - generic [ref=e464]:
+          - generic [ref=e465]: George Călinescu
+          - generic [ref=e466]: 1899 – 1965
+          - generic [ref=e467]: publicat 1938 · inițial „Părinții Otiliei"
+      - generic [ref=e468]:
+        - generic [ref=e469]: Viața burgheziei bucureștene sec. XX
+        - generic [ref=e470]: Moștenire și paternitate
+        - generic [ref=e471]: Maturizarea lui Felix
+        - generic [ref=e472]: Realism balzacian · cu elemente de modernitate
+      - generic [ref=e473]:
+        - text: “
+        - paragraph [ref=e474]: „un balzacianism fără Balzac"
+        - generic [ref=e475]: — Nicolae Manolescu
+      - generic [ref=e476]: Compoziție
+      - generic [ref=e477]:
+        - heading "2 planuri narative · Simetrie incipit–final (strada Antim) · Epilog" [level=3] [ref=e478]
+        - generic [ref=e479]:
+          - generic [ref=e480]:
+            - strong [ref=e481]: Planul moștenirii
+            - paragraph [ref=e482]: Istoria averii lui Costache Giurgiuveanu — lupta de moștenire
+          - generic [ref=e483]: +
+          - generic [ref=e484]:
+            - strong [ref=e485]: Planul Felix–Otilia
+            - paragraph [ref=e486]: Destinul cuplului; maturizarea lui Felix; enigma Otiliei
+      - generic [ref=e487]: Tipologiile balzaciene
+      - generic [ref=e488]:
+        - generic [ref=e489]:
+          - strong [ref=e490]: Costache
+          - text: avarul — zgârcenia patologică
+        - generic [ref=e491]:
+          - strong [ref=e492]: Aglae
+          - text: „baba absolută fără cusur în rău"
+        - generic [ref=e493]:
+          - strong [ref=e494]: Stănică Rațiu
+          - text: arivistul — parvenitul cinic
+        - generic [ref=e495]:
+          - strong [ref=e496]: Otilia
+          - text: cocheta — „eroina mea lirică" (Călinescu)
+        - generic [ref=e497]:
+          - strong [ref=e498]: Felix
+          - text: ambițiosul — ochii cititorului
+        - generic [ref=e499]:
+          - strong [ref=e500]: Pascalopol
+          - text: aristocratul rafinat
+        - generic [ref=e501]:
+          - strong [ref=e502]: Aurica
+          - text: fata bătrână — complexe
+        - generic [ref=e503]:
+          - strong [ref=e504]: Simion
+          - text: dementul senil
+      - generic [ref=e505]: Aspecte distinctive
+      - generic [ref=e506]:
+        - generic [ref=e507]:
+          - generic [ref=e508]: 🪞
+          - generic [ref=e509]: Camera Otiliei — psihologie prin spațiu
+          - generic [ref=e510]: 3 oglinzi mobile = mobilitate psihică. Piano = sensibilitate artistică. Cărți germane și franceze = cosmopolitism, inadaptare la mediu.
+        - generic [ref=e511]:
+          - generic [ref=e512]: 🔍
+          - generic [ref=e513]: Reflectarea poliendrică
+          - generic [ref=e514]: Otilia văzută diferit de fiecare personaj. Nu există o Otilie adevărată — există atâtea Otilii câți privitori. Enigma = perspectivism.
+        - generic [ref=e515]:
+          - generic [ref=e516]: 🎭
+          - generic [ref=e517]: Epilogul — dezamăgitor intenționat
+          - generic [ref=e518]: Otilia = „o doamnă foarte picantă, gen actriță întreținută". Felix = profesor celebru, căsătorit cu alta. Ironia sorții.
+        - generic [ref=e519]:
+          - generic [ref=e520]: ❓
+          - generic [ref=e521]: Enigma — a cui?
+          - generic [ref=e522]: „Nu Otilia are o enigmă, ci Felix crede că o are." Enigma = limitele cunoașterii celuilalt — roman de epistemologie sentimentală.
+    - generic [ref=e523]:
+      - generic [ref=e525]:
+        - generic [ref=e527]: Moara cu noroc
+        - generic [ref=e528]:
+          - generic [ref=e529]: Ioan Slavici
+          - generic [ref=e530]: 1848 – 1925
+          - generic [ref=e531]: „Novele din popor" · 1881
+      - generic [ref=e532]:
+        - generic [ref=e533]: Dezumanizarea prin patima banilor
+        - generic [ref=e534]: Realism clasic social și psihologic
+      - generic [ref=e535]:
+        - text: “
+        - paragraph [ref=e536]: „nuvela lui Ioan Slavici dovedește profesionalizarea accentuată a narațiunii românești"
+        - generic [ref=e537]: — Gheorghe Crăciun
+      - generic [ref=e538]: Compoziție
+      - generic [ref=e539]:
+        - 'heading "17 capitole · Simetrie incipit–final (vocea soacrei) · Durată: Sf. Gheorghe → Paști (~1 an)" [level=3] [ref=e540]'
+        - generic [ref=e541]:
+          - generic [ref=e542]:
+            - generic [ref=e543]: Incipit
+            - text: Vocea soacrei
+            - text: Mesaj moral in nuce
+          - generic [ref=e544]: →
+          - generic [ref=e545]:
+            - generic [ref=e546]: Ascensiune
+            - text: Succesul morii
+            - text: Banii corup
+          - generic [ref=e547]: →
+          - generic [ref=e548]:
+            - generic [ref=e549]: Decădere
+            - text: Ghiță—complice
+            - text: Ana—trădată
+          - generic [ref=e550]: →
+          - generic [ref=e551]:
+            - generic [ref=e552]: Final
+            - text: Incendiu—Paști
+            - text: Purificare prin foc
+      - generic [ref=e553]: Aspecte distinctive
+      - generic [ref=e554]:
+        - generic [ref=e555]:
+          - generic [ref=e556]: 🏠
+          - generic [ref=e557]: Titlul — ironic
+          - generic [ref=e558]: Moara cu „noroc" = moara care MACINĂ destine. Noroc = capcană ironică. Locul prosperității = locul ruinei morale.
+        - generic [ref=e559]:
+          - generic [ref=e560]: 👴
+          - generic [ref=e561]: Soacra — vocea înțelepciunii
+          - generic [ref=e562]: "Personaj secundar cu rol simbolic major. Înrămdează nuvela. Incipit: „Omul să fie mulțumit cu sărăcia sa...\" — teza morală."
+        - generic [ref=e563]:
+          - generic [ref=e564]: 😈
+          - generic [ref=e565]: Lică Sămădău — maleficul
+          - generic [ref=e566]: Inteligent, manipulator, personificarea tentației. Nu forța brută — ci seducția corupătoare a banilor.
+        - generic [ref=e567]:
+          - generic [ref=e568]: 💬
+          - generic [ref=e569]: Ghiță — tragedia liberului arbitru
+          - generic [ref=e570]: „Așa m-a lăsat Dumnezeu! Ce să fac dacă e în mine ceva mai tare decât voința mea?!" — recunoașterea lipsei de forță morală.
+      - generic [ref=e571]:
+        - paragraph [ref=e572]: „Omul să fie mulțumit cu sărăcia sa, căci dacă e vorba nu bogăția ci liniștea colibei tale te face fericit."
+        - generic [ref=e573]: — Soacra · incipit și final
+    - generic [ref=e574]:
+      - generic [ref=e576]:
+        - generic [ref=e578]: Moromeții
+        - generic [ref=e579]:
+          - generic [ref=e580]: Marin Preda
+          - generic [ref=e581]: 1922 – 1980
+          - generic [ref=e582]: vol. I 1955 · vol. II 1967
+      - generic [ref=e583]:
+        - generic [ref=e584]: Destrămarea familiei tradiționale
+        - generic [ref=e585]: Criza comunicării
+        - generic [ref=e586]: Condiția țăranului față de Istorie
+        - generic [ref=e587]: Realism postbelic · Neorealism
+      - generic [ref=e588]:
+        - text: “
+        - paragraph [ref=e589]: „Moromeții e în același timp un roman dramă și implicit un roman problemă"
+        - generic [ref=e590]: — Dumitru Micu
+      - generic [ref=e591]: Compoziție · Cele 2 timpuri
+      - generic [ref=e592]:
+        - heading "Vol. I = 3 părți · vara dinaintea WWII" [level=3] [ref=e593]
+        - generic [ref=e594]:
+          - generic [ref=e595]:
+            - strong [ref=e596]: Incipit
+            - paragraph [ref=e597]:
+              - text: „...se pare că timpul avea cu oamenii o
+              - strong [ref=e598]: nesfârșită răbdare
+              - text: "\""
+          - generic [ref=e599]: →
+          - generic [ref=e600]:
+            - strong [ref=e601]: Final vol. I
+            - paragraph [ref=e602]:
+              - text: „Timpul
+              - strong [ref=e603]: nu mai avea răbdare
+              - text: "\""
+      - generic [ref=e604]: Aspecte distinctive
+      - generic [ref=e605]:
+        - generic [ref=e606]:
+          - generic [ref=e607]: 🕰️
+          - generic [ref=e608]: Cele 2 tipuri de timp
+          - generic [ref=e609]:
+            - strong [ref=e610]: Subiectiv
+            - text: "(al lui Moromete): iluzoriu, lent, contemplativ."
+            - strong [ref=e611]: Obiectiv–istoric
+            - text: ": agresiv, inexorabil. Conflictul dintre ele = drama romanului."
+        - generic [ref=e612]:
+          - generic [ref=e613]: 🍽️
+          - generic [ref=e614]: Scena cinei — prefigurare
+          - generic [ref=e615]: Frații vitregi stau ca gata să plece. Tensiunea latentă devine vizibilă. Microcosm al destrămarii familiei.
+        - generic [ref=e616]:
+          - generic [ref=e617]: 🌳
+          - generic [ref=e618]: Tăierea salcâmului
+          - generic [ref=e619]: "Desacralizare: salcâmul = axis mundi al familiei. „Ca să se mire proștii\" — cinism dureros al lui Moromete față de destrămare."
+        - generic [ref=e620]:
+          - generic [ref=e621]: 🌿
+          - generic [ref=e622]: Poiana lui Iocan
+          - generic [ref=e623]: Spațiu al colectivității masculine. Discuție politică, filozofică. Contrapunct al lumii interioare a familiei.
+      - generic [ref=e624]: Cele 4 conflicte
+      - generic [ref=e625]:
+        - generic [ref=e626]:
+          - heading "Conflicte în roman" [level=3] [ref=e627]
+          - list [ref=e628]:
+            - listitem [ref=e629]: – Moromete ↔ Fiii mari (Paraschiv, Nilă, Achim) — plecarea spre București
+            - listitem [ref=e630]: – Moromete ↔ Catrina — noua soție, interese divergente
+            - listitem [ref=e631]: – Moromete ↔ Sora lui — Guica, complicată
+            - listitem [ref=e632]: – Moromete ↔ Nicolae (vol. II) — generație nouă, lume nouă
+        - generic [ref=e633]:
+          - heading "Moduri de construcție" [level=3] [ref=e634]
+          - list [ref=e635]:
+            - listitem [ref=e636]: – Naratori reflectori multipli
+            - listitem [ref=e637]: – Tehnica decupajului
+            - listitem [ref=e638]: – Acumularea detaliilor semnificative
+            - listitem [ref=e639]: – Conflict simplu și conflict multiplu simultan
+    - generic [ref=e640]:
+      - generic [ref=e642]:
+        - generic [ref=e644]: O scrisoare pierdută
+        - generic [ref=e645]:
+          - generic [ref=e646]: I.L. Caragiale
+          - generic [ref=e647]: 1852 – 1912
+          - generic [ref=e648]: "reprezentată 1884 · sursă: farsa electorală din 1883"
+      - generic [ref=e649]:
+        - generic [ref=e650]: Farsa electorală
+        - generic [ref=e651]: Imoralitate publică și privată
+        - generic [ref=e652]: Realism · Comedie de moravuri
+      - generic [ref=e653]:
+        - text: “
+        - paragraph [ref=e654]: „O scrisoare pierdută rămâne capodopera teatrului comic (și nu numai) românesc"
+        - generic [ref=e655]: — Nicolae Manolescu
+      - generic [ref=e656]: Compoziție
+      - generic [ref=e657]:
+        - heading "4 acte · 3 zile · Structură geometrică impecabilă" [level=3] [ref=e658]
+        - generic [ref=e659]:
+          - generic [ref=e660]:
+            - generic [ref=e661]: I
+            - text: Expoziție
+            - text: Scrisoarea pierdută; intriga Zoe
+          - generic [ref=e662]: →
+          - generic [ref=e663]:
+            - generic [ref=e664]: II
+            - text: Complicație
+            - text: Apare Cațavencu (tardiv!); șantaj
+          - generic [ref=e665]: →
+          - generic [ref=e666]:
+            - generic [ref=e667]: III
+            - text: Punct Culminant
+            - text: Adunarea; Dandanache surpriză
+          - generic [ref=e668]: →
+          - generic [ref=e669]:
+            - generic [ref=e670]: IV
+            - text: Deznodământ
+            - text: Atmosfera refăcută; nimic nu s-a schimbat
+      - generic [ref=e671]: Cele 5 tipuri de comic
+      - generic [ref=e672]:
+        - generic [ref=e673]:
+          - generic [ref=e674]: 🎭
+          - generic [ref=e675]: Comic de situație
+          - generic [ref=e676]: Scrisoarea găsită/pierdută succesiv. Dandanache apare în loc de Cațavencu. Confuzii, coincidențe, surprize.
+        - generic [ref=e677]:
+          - generic [ref=e678]: 💬
+          - generic [ref=e679]: Comic de limbaj
+          - generic [ref=e680]: "„bampir\", „remunerație\", „famelie\", „patuzsopt\". Ticuri: „puțintică răbdare\" (Trahanache), „Curat murdar!\" (Pristanda)."
+        - generic [ref=e681]:
+          - generic [ref=e682]: 📛
+          - generic [ref=e683]: Comic de nume
+          - generic [ref=e684]: Trahanache (trahana=mâncare moale=incapabil), Farfuridi, Brânzovenescu, Dandanache (dandana=încurcătură).
+        - generic [ref=e685]:
+          - generic [ref=e686]: 😂
+          - generic [ref=e687]: Comic de caracter + moravuri
+          - generic [ref=e688]: Tipuri fixe fără evoluție. Satira societatii politice ca sistem — nu cazuri individuale.
+      - generic [ref=e689]: Tipologiile piesei
+      - generic [ref=e690]:
+        - generic [ref=e691]:
+          - strong [ref=e692]: Zoe
+          - text: cocheta / adulterina
+        - generic [ref=e693]:
+          - strong [ref=e694]: Trahanache
+          - text: încornoratul inofensiv
+        - generic [ref=e695]:
+          - strong [ref=e696]: Tipătescu
+          - text: amorezul, prefectul
+        - generic [ref=e697]:
+          - strong [ref=e698]: Cațavencu
+          - text: demagogul șantajist
+        - generic [ref=e699]:
+          - strong [ref=e700]: Dandanache
+          - text: „mai prost și mai canalie"
+        - generic [ref=e701]:
+          - strong [ref=e702]: Farfuridi
+          - text: demagogul comic
+        - generic [ref=e703]:
+          - strong [ref=e704]: Pristanda
+          - text: funcționarul servil
+        - generic [ref=e705]:
+          - strong [ref=e706]: Cetățeanul
+          - text: turmentat — poporul
+      - generic [ref=e707]:
+        - generic [ref=e708]: 📝
+        - generic [ref=e709]: Titlul — articolul nehotărât „O"
+        - generic [ref=e710]:
+          - text: „
+          - strong [ref=e711]: O
+          - text: "\" scrisoare, nu „Scrisoarea\" — banalitate crucială. Orice scrisoare, oricând, în orice județ. Satira e universală și repetabilă, nu un caz particular."
+      - paragraph [ref=e713]: "„Nimic nu s-a schimbat\" — finalul comediei: atmosfera festivă, toți se îmbrățișează. Satira corectă: sistemul e mai tare decât indivizii."
+    - generic [ref=e714]:
+      - generic [ref=e716]:
+        - generic [ref=e718]: Povestea lui Harap-Alb
+        - generic [ref=e719]:
+          - generic [ref=e720]: Ion Creangă
+          - generic [ref=e721]: 1839 – 1889
+          - generic [ref=e722]: publicat 1877 · „Convorbiri literare"
+      - generic [ref=e723]:
+        - generic [ref=e724]: Inițierea și maturizarea
+        - generic [ref=e725]: Lupta bine–rău
+        - generic [ref=e726]: Basm cult
+      - generic [ref=e727]:
+        - text: “
+        - paragraph [ref=e728]: „e un chip de a dovedi că omul de soi bun se vădește sub orice strai și la orice vârstă"
+        - generic [ref=e729]: — George Călinescu
+      - generic [ref=e730]: Compoziție
+      - generic [ref=e731]:
+        - heading "Acțiune liniară · Înlănțuire secvențe · Formulă inițială inovatoare" [level=3] [ref=e732]
+        - generic [ref=e733]:
+          - generic [ref=e734]:
+            - generic [ref=e735]: Plecarea
+            - text: Proba bunătății
+            - text: Bătrâna – sfaturile tatălui
+          - generic [ref=e736]: →
+          - generic [ref=e737]:
+            - generic [ref=e738]: Fântâna
+            - text: Botezul inițiatic
+            - text: Spânul îl coboară; „Harap-Alb"
+          - generic [ref=e739]: →
+          - generic [ref=e740]:
+            - generic [ref=e741]: Probele
+            - text: 5 ajutători
+            - text: Gerică, Setilă, Flămânzilă, Orbilă, Păsări-Lăți-Lungilă
+          - generic [ref=e742]: →
+          - generic [ref=e743]:
+            - generic [ref=e744]: Moarte–Renaștere
+            - text: Inițierea completă
+            - text: Decapitare → reînviere
+      - generic [ref=e745]: Aspecte distinctive
+      - generic [ref=e746]:
+        - generic [ref=e747]:
+          - generic [ref=e748]: ⚫⚪
+          - generic [ref=e749]: Titlul — oximoron
+          - generic [ref=e750]:
+            - strong [ref=e751]: Harap
+            - text: = rob negru (condiție exterioară).
+            - strong [ref=e752]: Alb
+            - text: = origine nobilă + calități sufletești pure. Identitatea e interioară, nu socială.
+        - generic [ref=e753]:
+          - generic [ref=e754]: 🕳️
+          - generic [ref=e755]: Scena fântânii — botez inițiatic
+          - generic [ref=e756]: Coborârea în fântână = coborâre în Infern (Hades). Spânul = impostorul care fură identitatea. Jurământul = legătura sacră.
+        - generic [ref=e757]:
+          - generic [ref=e758]: 😈
+          - generic [ref=e759]: Spânul — rău NECESAR
+          - generic [ref=e760]: „Și unii ca aceștia sunt trebuitori pe lume câteodată, pentru că fac pe oameni să prindă la minte." — fără opozant, nu există creștere.
+        - generic [ref=e761]:
+          - generic [ref=e762]: 🌲
+          - generic [ref=e763]: Pădurea labirint
+          - generic [ref=e764]: Pierderea sub sfatul părintesc = abandonarea ghidajului extern. Eroul trebuie să navigheze singur — condiție a maturizării.
+      - generic [ref=e765]:
+        - heading "Treptele inițierii" [level=3] [ref=e766]
+        - list [ref=e767]:
+          - listitem [ref=e768]:
+            - text: –
+            - strong [ref=e769]: Proba 1
+            - text: — bunătatea (mila față de bătrână deghizată)
+          - listitem [ref=e770]:
+            - text: –
+            - strong [ref=e771]: Proba 2
+            - text: — curajul (trecerea podul ursului, a tatălui)
+          - listitem [ref=e772]:
+            - text: –
+            - strong [ref=e773]: Probele lui Verde-Împărat
+            - text: — loialitate, inteligență, rezistență
+          - listitem [ref=e774]:
+            - text: –
+            - strong [ref=e775]: Moartea simbolică
+            - text: — decapitarea de Spân + reînviere = inițierea completă
+      - paragraph [ref=e777]: „Amu cică era odată..." — formula inițială inovatoare față de basmul tradițional „A fost odată ca-n povești". Creangă plasează basmul în oralitate imediată.
+    - generic [ref=e778]:
+      - generic [ref=e780]:
+        - generic [ref=e782]: Ultima noapte de dragoste, întâia noapte de război
+        - generic [ref=e783]:
+          - generic [ref=e784]: Camil Petrescu
+          - generic [ref=e785]: 1894 – 1957
+          - generic [ref=e786]: publicat 1930
+      - generic [ref=e787]:
+        - generic [ref=e788]: Iubire și gelozie
+        - generic [ref=e789]: Războiul demitizat
+        - generic [ref=e790]: Cunoaștere prin experiențe limită
+        - generic [ref=e791]: Modernism psihologic · Roman de analiză
+      - generic [ref=e792]:
+        - text: “
+        - paragraph [ref=e793]: „Ceea ce izbutește mai bine autorul, nu este afundarea în regiunile obscure ale conștiinței, cât exactitatea aproape științifică în despicarea complexelor sufletești"
+        - generic [ref=e794]: — Tudor Vianu
+      - generic [ref=e795]: Compoziție · 2 planuri temporale
+      - generic [ref=e796]:
+        - heading "Cronologie anulată · Memorie voluntară (≠ Proust) · Final deschis" [level=3] [ref=e797]
+        - generic [ref=e798]:
+          - generic [ref=e799]:
+            - strong [ref=e800]: Prezentul frontului
+            - paragraph [ref=e801]: Discuția la popotă declanșează rememorarea. Cadrul narativ.
+          - generic [ref=e802]: ⇌
+          - generic [ref=e803]:
+            - strong [ref=e804]: Trecutul poveștii de iubire
+            - paragraph [ref=e805]: Relația cu Ela; gelozia crescândă; analiza psihologică.
+      - generic [ref=e806]: Aspecte distinctive
+      - generic [ref=e807]:
+        - generic [ref=e808]:
+          - generic [ref=e809]: 🔬
+          - generic [ref=e810]: Crezul artistic
+          - generic [ref=e811]: „Eu nu pot vorbi onest decât la persoana I." Autenticitate = condiție a artei. Narațiunea la persoana I = limita și forța romanului.
+        - generic [ref=e812]:
+          - generic [ref=e813]: 👁️
+          - generic [ref=e814]: Ela — văzută NUMAI prin Gheorghidiu
+          - generic [ref=e815]: „Nu Ela se schimbă... ci felul în care o vede Ștefan" (Manolescu). Gelozia distorsionează realitatea. Ela poate fi nevinovată.
+        - generic [ref=e816]:
+          - generic [ref=e817]: 💰
+          - generic [ref=e818]: Moștenirea unchiului Tache
+          - generic [ref=e819]: "Punct de cotitură: banii schimbă dinamica cuplului. Capitolul „Diagonalele unui testament\" = debutului declinului."
+        - generic [ref=e820]:
+          - generic [ref=e821]: ⚔️
+          - generic [ref=e822]: Războiul demitizat total
+          - generic [ref=e823]: „Nu mai e nimic omenesc în noi." Haos, mizerie, teamă. Contrariul gloriei romantice. Primul roman anti-eroic din literatura română.
+      - paragraph [ref=e825]: "„I-am lăsat absolut tot ce e în casă... adică tot trecutul.\" — finalul romanului: Gheorghidiu abandonează Ela și odată cu ea propria gelozie și propria iluzie."
+    - generic [ref=e826]:
+      - generic [ref=e828]:
+        - generic [ref=e830]: Riga Crypto și lapona Enigel
+        - generic [ref=e831]:
+          - generic [ref=e832]: Ion Barbu
+          - generic [ref=e833]: 1895 – 1961
+          - generic [ref=e834]: publicat 1924 · volumul „Joc secund" 1930
+      - generic [ref=e835]:
+        - generic [ref=e836]: Condiția ființei superioare/inferioare
+        - generic [ref=e837]: Iubire imposibilă
+        - generic [ref=e838]: Cunoașterea
+        - generic [ref=e839]: Modernism interbelic · Etapa baladică/orientală
+      - generic [ref=e840]:
+        - text: “
+        - paragraph [ref=e841]: „Un Luceafăr cu rolurile inversate și într-un decor de o nebănuită noutate"
+        - generic [ref=e842]: — Nicolae Manolescu
+      - generic [ref=e843]: Compoziție · Poveste în ramă
+      - generic [ref=e844]:
+        - heading "Primele 4 strofe = dialog menestrel–nuntaș · 7 tablouri poetice · Subintitulat „Baladă\"" [level=3] [ref=e845]
+        - generic [ref=e846]:
+          - generic [ref=e847]:
+            - generic [ref=e848]: Ramă
+            - text: Nuntă în sat
+            - text: Context festiv real
+          - generic [ref=e849]: →
+          - generic [ref=e850]:
+            - generic [ref=e851]: Enigel
+            - text: Drumul spre sud
+            - text: Lapona aspiră la soare
+          - generic [ref=e852]: →
+          - generic [ref=e853]:
+            - generic [ref=e854]: 3 chemări
+            - text: Crypto cheamă
+            - text: Ritual magic de 3 ori
+          - generic [ref=e855]: →
+          - generic [ref=e856]:
+            - generic [ref=e857]: Tragedie
+            - text: Nuntă imposibilă
+            - text: Crypto = ciupercă otravă
+      - generic [ref=e858]: Luceafărul întors
+      - generic [ref=e859]:
+        - generic [ref=e860]:
+          - heading "Comparație cu Luceafărul" [level=3] [ref=e861]
+          - list [ref=e862]:
+            - listitem [ref=e863]: "– La Eminescu: geniul (M) aspiră spre muritoarea (F)"
+            - listitem [ref=e864]: "– La Barbu: superioara (F–Enigel) refuză inferiorul (M–Crypto)"
+            - listitem [ref=e865]: "– La Eminescu: finalul = reabilitare/detașare a geniului"
+            - listitem [ref=e866]: "– La Barbu: finalul = degradare/pieire a inferiorului"
+            - listitem [ref=e867]: "– Ambele: incompatibilitate ontologică"
+        - generic [ref=e868]:
+          - heading "Semnificația numelor" [level=3] [ref=e869]
+          - list [ref=e870]:
+            - listitem [ref=e871]:
+              - text: –
+              - strong [ref=e872]: Crypto
+              - text: = criptic (ascuns) + criptogame (ciuperci, plante inferioare)
+            - listitem [ref=e873]:
+              - text: –
+              - strong [ref=e874]: Enigel
+              - text: = „engel" (suedeză) = înger
+            - listitem [ref=e875]: "– Crypto: „inimă ascunsă\" — imposibilitatea comunicării"
+            - listitem [ref=e876]: "– Enigel: aspirație spre lumină/cunoaștere (soare)"
+      - generic [ref=e877]: Aspecte distinctive
+      - generic [ref=e878]:
+        - generic [ref=e879]:
+          - generic [ref=e880]: 🌞
+          - generic [ref=e881]: Drumul Enigelei — transhumanță
+          - generic [ref=e882]: Deplasarea cu renii spre sud = transhumanță reală + aspirație spre soare = cunoaștere. Enigel = ființa în ascensiune.
+        - generic [ref=e883]:
+          - generic [ref=e884]: 🍄
+          - generic [ref=e885]: Crypto — transformarea
+          - generic [ref=e886]: Refuzul Enigelei → Crypto devine ciupercă otrăvitoare. Dragostea neîmplinită = corupție a ființei inferioare.
+        - generic [ref=e887]:
+          - generic [ref=e888]: 💒
+          - generic [ref=e889]: Cele 3 nunți
+          - generic [ref=e890]: 1. Nuntă reală (cadrul — împlinită). 2. Nuntă imposibilă Crypto–Enigel. 3. Nunta ciupercilor (degradat). Trei registre ale iubirii.
+        - generic [ref=e891]:
+          - generic [ref=e892]: 🔭
+          - generic [ref=e893]: Ion Barbu — poetul-matematician
+          - generic [ref=e894]: „Pentru mine poezia e o prelungire a geometriei." Poezia = structură abstractă, esențializare maximă. Hermetism = refuz al ornamentului.
+    - generic [ref=e895]:
+      - generic [ref=e897]:
+        - generic [ref=e899]: Aci sosi pe vremuri
+        - generic [ref=e900]:
+          - generic [ref=e901]: Ion Pillat
+          - generic [ref=e902]: 1891 – 1945
+          - generic [ref=e903]: volum „Pe Argeș în sus" · 1933
+      - generic [ref=e904]:
+        - generic [ref=e905]: Trecerea ireversibilă a timpului
+        - generic [ref=e906]: Repetabilitatea experiențelor umane
+        - generic [ref=e907]: Tradiționism interbelic
+      - generic [ref=e908]:
+        - text: “
+        - paragraph [ref=e909]: „Capodopera lui Ion Pillat este Aci sosi pe vremuri — grațioasă, mișcătoare și invizibilă paralelă între două veacuri"
+        - generic [ref=e910]: — George Călinescu
+      - generic [ref=e911]: Compoziție · 2 planuri temporale în oglindă
+      - generic [ref=e912]:
+        - heading "19 distihuri + monovers final · Simetrie și opoziție ATUNCI–ACUM" [level=3] [ref=e913]
+        - generic [ref=e914]:
+          - generic [ref=e915]:
+            - strong [ref=e916]: ATUNCI — Trecut
+            - paragraph [ref=e917]: Bunica Calyopi + logodnicul. Berlina. Verbe la perfect simplu. Sec. XIX.
+          - generic [ref=e918]: ≅
+          - generic [ref=e919]:
+            - strong [ref=e920]: ACUM — Prezent
+            - paragraph [ref=e921]: Poetul + iubita. Trăsura ta. Verbe la imperfect. Sec. XX.
+      - generic [ref=e922]: Aspecte distinctive
+      - generic [ref=e923]:
+        - generic [ref=e924]:
+          - generic [ref=e925]: 🕷️
+          - generic [ref=e926]: Casa amintirii — timp vizual
+          - generic [ref=e927]: Păianjenii = curgerea timpului vizibilă. Casa = spațiu al memoriei stratificate. Trecutul e prezent fizic în ruinare.
+        - generic [ref=e928]:
+          - generic [ref=e929]: 🎵
+          - generic [ref=e930]: Calyopi — muza eternității
+          - generic [ref=e931]: Kalliope = muza poeziei epice grecești. Iubirea bunicii capătă dimensiune eternă, mitologică — nu e simplă amintire de familie.
+        - generic [ref=e932]:
+          - generic [ref=e933]: 🔔
+          - generic [ref=e934]: Clopotul — laitmotiv existențial
+          - generic [ref=e935]: „De nuntă sau de moarte, în turnul vechi din sat" — bate mereu, pentru toate evenimentele. Viața și moartea = același semnal.
+        - generic [ref=e936]:
+          - generic [ref=e937]: 🚗
+          - generic [ref=e938]: Berlina → Trăsura ta
+          - generic [ref=e939]: Tipul de vehicul se schimbă; actul (sosirea iubirii) e același. Repetabilitate perfectă în forme imperceptibil modificate.
+      - generic [ref=e940]: Moduri de construcție
+      - generic [ref=e941]:
+        - generic [ref=e942]:
+          - heading "Procedee poetice" [level=3] [ref=e943]
+          - list [ref=e944]:
+            - listitem [ref=e945]: – Repetiție vers-titlu „Aci sosi pe vremuri" = laitmotiv temporal
+            - listitem [ref=e946]: "– Modificare timpuri verbale: perfect simplu → imperfect (apropierea de prezent)"
+            - listitem [ref=e947]: – Punctele de suspensie = ruptura temporală vizibilă
+            - listitem [ref=e948]: – Monoversul final = singurătate după revelație
+        - generic [ref=e949]:
+          - heading "Concepte filozofice" [level=3] [ref=e950]
+          - list [ref=e951]:
+            - listitem [ref=e952]:
+              - text: –
+              - emphasis [ref=e953]: Fugit irreparabile tempus
+              - text: (Vergiliu) — timpul fuge ireversibil
+            - listitem [ref=e954]:
+              - text: –
+              - emphasis [ref=e955]: Fortuna labilis
+              - text: — soarta schimbătoare
+            - listitem [ref=e956]:
+              - text: –
+              - emphasis [ref=e957]: Vanitas vanitatum
+              - text: — zădărnicia lucrurilor
+            - listitem [ref=e958]: "– Manolescu: „bunicii iau totul de la capăt în forme imperceptibil modificate\""
+      - paragraph [ref=e960]:
+        - text: "Titlul: „"
+        - strong [ref=e961]: aci
+        - text: "\" (arhaism regional) + „"
+        - strong [ref=e962]: pe vremuri
+        - text: "\" = spațiu-timp arhaic, suspendat. Locul și clipa devin eterne prin repetiție."
